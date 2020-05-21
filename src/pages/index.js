@@ -1,21 +1,36 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import TopFold from "../components/TopFold.jsx"
+import AboutMe from "../components/AboutMe.jsx"
+import Projects from "../components/Projects.jsx"
+import Resume from "../components/Resume.jsx"
+import Contact from "../components/ContactMe.jsx"
+import Footer from "../components/Footer.jsx"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <div>
+    <Helmet>
+      <link
+        href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+        rel="stylesheet"
+      />
+      <link
+        rel="shortcut icon"
+        href="https://jaredsportfolio.s3-us-west-1.amazonaws.com/LogoLight.png"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+    </Helmet>
+    <TopFold />
+    <AboutMe />
+    <Projects />
+    <Resume />
+    <Contact />
+    <Footer />
+  </div>
 )
 
 export default IndexPage
