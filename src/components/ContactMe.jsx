@@ -82,7 +82,7 @@ const ContactWrapper = styled.div`
       );
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
       transform: translateY(-2px);
-      border-radius: 2px;
+      border-radius: 4px;
     }
 
     &:active {

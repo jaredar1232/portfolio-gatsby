@@ -88,7 +88,7 @@ const AProjectWrapper = styled.div`
     color: white;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
-    border-radius: 2px;
+    border-radius: 4px;
   }
 
   .btn-text:active {
@@ -120,7 +120,7 @@ const AProjectWrapper = styled.div`
     color: white;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
-    border-radius: 2px;
+    border-radius: 4px;
   }
 
   .btn--2:active {
