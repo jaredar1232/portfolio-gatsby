@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from "react"
+import styled from "styled-components"
 
 const AProjectWrapper = styled.div`
   .project-container {
@@ -22,7 +22,7 @@ const AProjectWrapper = styled.div`
 
   .image-container {
     height: auto;
-    width: ${(props) => props.projectWidth}%;
+    width: ${props => props.projectWidth}%;
     margin: 0 auto 0 auto;
     position: relative;
   }
@@ -137,26 +137,26 @@ const AProjectWrapper = styled.div`
     margin: 2rem;
     text-align: left;
   }
-`;
+`
 
 export default class AProject extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       video: true,
-    };
+    }
   }
 
   displayChanger() {
     this.setState({
       video: !this.state.video,
-    });
+    })
   }
 
   render() {
-    const aProject = this.props.aProject;
-    const projectWidth = aProject.width;
-    console.log(projectWidth);
+    const aProject = this.props.aProject
+    const projectWidth = aProject.width
+    console.log(projectWidth)
 
     return (
       <AProjectWrapper projectWidth={projectWidth}>
@@ -170,8 +170,10 @@ export default class AProject extends Component {
                   : "project-info-container"
               }
             >
-              {aProject.details.map((bulletPoint) => (
-                <div className="details-bullet">{bulletPoint}</div>
+              {aProject.details.map(bulletPoint => (
+                <div className="details-bullet" key={bulletPoint}>
+                  {bulletPoint}
+                </div>
               ))}
             </div>
             <video
@@ -216,6 +218,6 @@ export default class AProject extends Component {
           </div>
         </div>
       </AProjectWrapper>
-    );
+    )
   }
 }
