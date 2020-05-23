@@ -122,7 +122,7 @@ export default class Contact extends React.Component {
 
     axios
       .post(
-        "http://localhost:1232",
+        "https://jared-rothenberg-portfolio-ser.herokuapp.com/",
         {
           name: this.state.name,
           email: this.state.email,
