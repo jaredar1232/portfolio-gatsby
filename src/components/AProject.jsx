@@ -156,7 +156,6 @@ export default class AProject extends Component {
   render() {
     const aProject = this.props.aProject
     const projectWidth = aProject.width
-    console.log(projectWidth)
 
     return (
       <AProjectWrapper projectWidth={projectWidth}>
