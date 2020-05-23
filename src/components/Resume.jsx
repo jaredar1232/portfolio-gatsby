@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from "react"
+import styled from "styled-components"
 
 const ResumeWrapper = styled.div`
   .section-resume {
@@ -34,7 +34,7 @@ const ResumeWrapper = styled.div`
   .iframe-container-4x3 {
     padding-top: 75%;
   }
-`;
+`
 
 export default class Resume extends Component {
   render() {
@@ -43,12 +43,12 @@ export default class Resume extends Component {
         <section className="section-resume">
           <div className="iframe-container">
             <iframe
-              src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/1+Resume%3APagesFixed%3ACurrent+Blue+Without+stack.pdf"
+              src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Resume.pdf"
               className="iframe"
             ></iframe>
           </div>
         </section>
       </ResumeWrapper>
-    );
+    )
   }
 }
