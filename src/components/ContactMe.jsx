@@ -132,6 +132,7 @@ export default class Contact extends React.Component {
         {
           headers: {
             "Content-Type": "application/json",
+            " Access-Control-Allow-Origin": "https://jaredar.com",
           },
         }
       )
