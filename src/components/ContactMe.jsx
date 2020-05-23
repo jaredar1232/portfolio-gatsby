@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
+import axios from "axios"
+// import sgMail from "@sendgrid/mail"
 
 const ContactWrapper = styled.div`
   .section-contact {
@@ -117,6 +119,35 @@ export default class Contact extends React.Component {
   handleSubmit(event) {
     alert("A name was submitted: " + this.state.value)
     event.preventDefault()
+    // sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+    // const msg = {
+    //   to: "test@example.com",
+    //   from: "test@example.com",
+    //   subject: "Sending with Twilio SendGrid is Fun",
+    //   text: "and easy to do anywhere, even with Node.js",
+    //   html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+    // }
+    // sgMail.send(msg).then(
+    //   () => {},
+    //   error => {
+    //     console.error(error)
+
+    //     if (error.response) {
+    //       console.error(error.response.body)
+    //     }
+    //   }
+    // )
+    // (async () => {
+    //   try {
+    //     await sgMail.send(msg)
+    //   } catch (error) {
+    //     console.error(error)
+
+    //     if (error.response) {
+    //       console.error(error.response.body)
+    //     }
+    //   }
+    // })()
   }
   render() {
     return (
