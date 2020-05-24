@@ -87,7 +87,9 @@ export default class Projects extends Component {
       <ProjectsWrapper>
         <section className="project-page-buffer">
           <div className="u-center-text">
-            <h2 className="heading-secondary">Applications</h2>
+            <h2 className="heading-secondary" id="applications">
+              Applications
+            </h2>
           </div>
           {projectDataArray.map(aProject => (
             <AProject aProject={aProject} key={aProject.name} />

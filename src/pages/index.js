@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
+import Navbar from "../components/Navbar.jsx"
 import TopFold from "../components/TopFold.jsx"
 import AboutMe from "../components/AboutMe.jsx"
 import Projects from "../components/Projects.jsx"
@@ -24,6 +25,7 @@ const IndexPage = () => (
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       />
     </Helmet>
+    <Navbar />
     <TopFold />
     <AboutMe />
     <Projects />

@@ -40,7 +40,7 @@ export default class Resume extends Component {
     return (
       <ResumeWrapper>
         <section className="section-resume">
-          <div className="iframe-container">
+          <div className="iframe-container" id="resume">
             <iframe
               src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Resume.pdf"
               className="iframe"

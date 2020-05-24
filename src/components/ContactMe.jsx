@@ -149,7 +149,9 @@ export default class Contact extends React.Component {
       <ContactWrapper>
         <section className="section-contact">
           <div className="u-center-text">
-            <h2 className="heading-secondary">Lets Work Together!</h2>
+            <h2 className="heading-secondary" id="contact-me">
+              Lets Work Together!
+            </h2>
           </div>
 
           <div className="form-container">
