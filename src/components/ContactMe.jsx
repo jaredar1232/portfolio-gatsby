@@ -79,8 +79,8 @@ const ContactWrapper = styled.div`
     &:hover {
       background-image: linear-gradient(
         to right bottom,
-        rgb(68, 120, 148),
-        rgb(86, 99, 175)
+        rgb(86, 171, 216),
+        rgb(101, 116, 204)
       );
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
       transform: translateY(-2px);

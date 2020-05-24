@@ -4,7 +4,7 @@ import styled from "styled-components"
 const ResumeWrapper = styled.div`
   .section-resume {
     background-color: #181e2e;
-    padding: 40rem 0 20rem 0;
+    padding: 40rem 0 10rem 0;
     color: white;
     margin-top: -20vh;
   }
@@ -15,7 +15,7 @@ const ResumeWrapper = styled.div`
 
   .iframe-container {
     overflow: hidden;
-    padding-top: 56.25%;
+    padding-top: 67%;
     position: relative;
     width: 50%;
     height: 100%;
@@ -30,11 +30,10 @@ const ResumeWrapper = styled.div`
     width: 100%;
     height: 100%;
   }
-
-  .iframe-container-4x3 {
-    padding-top: 75%;
-  }
 `
+// .iframe-container-4x3 {
+//   padding-top: 75%;
+// }
 
 export default class Resume extends Component {
   render() {
