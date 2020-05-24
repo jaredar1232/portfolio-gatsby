@@ -88,9 +88,11 @@ export default class AboutMe extends Component {
     return (
       <AboutMeWrapper>
         <main>
-          <section className="section-about" id="about-me">
+          <section className="section-about">
             <div className="u-center-text">
-              <h2 className="heading-secondary">About Me</h2>
+              <h2 className="heading-secondary" id="about-me">
+                About Me
+              </h2>
             </div>
             <div className="row">
               <div className="col-1-of-2 writing">
