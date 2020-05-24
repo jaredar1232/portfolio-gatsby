@@ -17,7 +17,7 @@ const AProjectWrapper = styled.div`
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-left: 6rem;
+    margin-left: 8rem;
   }
 
   .image-container {
