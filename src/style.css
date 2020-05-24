@@ -20,3 +20,20 @@ body {
   padding: 0rem;
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(56, 165, 255);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(75, 101, 124);
+  border-radius: 10px;
+}

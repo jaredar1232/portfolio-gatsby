@@ -74,7 +74,7 @@ const NavbarWrapper = styled.div`
       position: fixed;
       top: 6.5rem;
       right: 6.5rem;
-      background-image: radial-gradient(rgb(102, 201, 255), rgb(120, 139, 249));
+      background-image: radial-gradient(rgb(94, 183, 231), rgb(114, 132, 233));
       z-index: 100;
       transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
 
@@ -166,14 +166,6 @@ const NavbarWrapper = styled.div`
       }
     }
   }
-
-  //   .navigation__button:hover .navigation__icon::before {
-  //     top: -1rem;
-  //   }
-
-  //   .navigation__button:hover .navigation__icon::after {
-  //     top: 1rem;
-  //   }
 
   .navigation__checkbox:checked ~ .navigation__background {
     transform: scale(140);
