@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import AProject from "../components/AProject.jsx";
+import React, { Component } from "react"
+import styled from "styled-components"
+import AProject from "../components/AProject.jsx"
 
 const ProjectsWrapper = styled.div`
   .project-page-buffer {
@@ -41,14 +41,14 @@ const ProjectsWrapper = styled.div`
     color: transparent;
     margin-bottom: 3rem;
   }
-`;
+`
 
 export default class Projects extends Component {
   render() {
     const projectDataArray = [
       {
         name: "Nike Mock Up",
-        width: 90,
+        width: 85,
         video: "https://jaredsportfolio.s3-us-west-1.amazonaws.com/Nike.mp4",
         github: "https://github.com/jaredar1232/Nike-Mock-Up",
         details: [
@@ -71,7 +71,7 @@ export default class Projects extends Component {
       },
       {
         name: "System Design",
-        width: 90,
+        width: 85,
         video:
           "https://jaredsportfolio.s3-us-west-1.amazonaws.com/SystemDesign.mp4",
         github: "https://github.com/jaredar1232/System-Design--BestBuy",
@@ -82,18 +82,18 @@ export default class Projects extends Component {
           "Deployed separate database and server; optimized 1 EC2 instance to 2000 rps, 0% error rate, and 126ms average response time and 3 nginx load balanced EC2 instances to 3000 rps, 0% error rate, and 63ms response time",
         ],
       },
-    ];
+    ]
     return (
       <ProjectsWrapper>
         <section className="project-page-buffer">
           <div className="u-center-text">
             <h2 className="heading-secondary">Applications</h2>
           </div>
-          {projectDataArray.map((aProject) => (
+          {projectDataArray.map(aProject => (
             <AProject aProject={aProject} key={aProject.name} />
           ))}
         </section>
       </ProjectsWrapper>
-    );
+    )
   }
 }

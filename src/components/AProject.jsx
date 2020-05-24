@@ -3,13 +3,13 @@ import styled from "styled-components"
 
 const AProjectWrapper = styled.div`
   .project-container {
-    width: 75%;
+    width: 65%;
     height: auto;
     background: white;
     border-radius: 20px;
     margin: 0 auto 5rem auto;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
-    padding: 4rem;
+    padding: 2rem 1rem;
     max-width: 125rem;
   }
 
