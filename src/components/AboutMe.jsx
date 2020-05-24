@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from "react"
+import styled from "styled-components"
 
 const AboutMeWrapper = styled.div`
   .section-about {
@@ -36,7 +36,7 @@ const AboutMeWrapper = styled.div`
   }
 
   .paragraph {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     &:not(:first-child) {
       margin-bottom: 3rem;
     }
@@ -81,7 +81,7 @@ const AboutMeWrapper = styled.div`
       top: 4rem;
     }
   }
-`;
+`
 
 export default class AboutMe extends Component {
   render() {
@@ -94,21 +94,15 @@ export default class AboutMe extends Component {
             </div>
             <div className="row">
               <div className="col-1-of-2 writing">
-                <h3 className="heading-tertiary">Some Stuff About me Title</h3>
+                <h3 className="heading-tertiary"></h3>
                 <p className="paragraph">
-                  I enjoy building beautiful software; intuitive for clients to
-                  interact with and refreshing for developers to read. I have
-                  experience solving problems with a wide variety of
-                  technologies and love adding new ones to my tool kit.
-                </p>
-                <h3 className="heading-tertiary">
-                  Some More Stuff About me Title
-                </h3>
-                <p className="paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis, quas reprehenderit. Eius excepturi fuga facere magnam
-                  aperiam laboriosam adipisci odit tempore odio saepe nesciunt,
-                  accusamus consectetur tempora quibusdam aliquid quaerat.
+                  Hello and welcome to my portfolio! I enjoy building beautiful
+                  software; intuitive for clients to interact with and
+                  refreshing for developers to read. I have experience solving
+                  problems with a wide variety of technologies and love adding
+                  new ones to my tool kit. I'm really interested in tech,
+                  medicince, health & fitness, and finance because I enjoy
+                  pushing personal and societal growth.
                 </p>
               </div>
               <div className="col-1-of-2">
@@ -124,6 +118,6 @@ export default class AboutMe extends Component {
           </section>
         </main>
       </AboutMeWrapper>
-    );
+    )
   }
 }
