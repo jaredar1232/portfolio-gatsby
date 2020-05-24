@@ -123,6 +123,7 @@ export default class Contact extends React.Component {
     axios
       .post(
         "https://jared-rothenberg-portfolio-ser.herokuapp.com/api",
+        // "http://localhost:1232/api",
         {
           name: this.state.name,
           email: this.state.email,
@@ -132,7 +133,6 @@ export default class Contact extends React.Component {
         {
           headers: {
             "Content-Type": "application/json",
-            // "Access-Control-Allow-Origin": "*",
           },
         }
       )
@@ -143,8 +143,7 @@ export default class Contact extends React.Component {
         console.log(error)
       })
   }
-  // "http://localhost:1232/api",
-  // "https://jared-rothenberg-portfolio-ser.herokuapp.com/api",
+
   render() {
     return (
       <ContactWrapper>
