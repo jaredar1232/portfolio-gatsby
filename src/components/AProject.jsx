@@ -190,10 +190,10 @@ export default class AProject extends Component {
             <video
               width="100%"
               height="auto"
+              playsinline
               muted
               loop
               autoPlay
-              playsinline
               className="project"
             >
               <source src={aProject.video} type="video/mp4"></source>
