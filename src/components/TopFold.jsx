@@ -15,10 +15,6 @@ const TopFoldWrapper = styled.div`
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
   }
 
-  ////////// MEDIA QUERIES ///////////
-
-  // 1em = 16px
-
   .header__text-box {
     position: absolute;
     top: 40%;
