@@ -48,9 +48,6 @@ const TopFoldWrapper = styled.div`
       font-size: 130%;
       letter-spacing: 1rem;
     }
-
-    /* animation-iteration-count: 3; */
-    /* animation-delay: 3s; */
   }
 
   .heading-primary--sub {

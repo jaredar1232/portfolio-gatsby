@@ -65,6 +65,13 @@ const NavbarWrapper = styled.div`
       :hover {
         transform: scale(1.1);
       }
+
+      @media (max-width: 56.25em) {
+        height: 5rem; // -2
+        width: 5rem; // -2
+        top: 55rem; // +49
+        right: 3rem; // -3
+      }
     }
 
     &__background {
@@ -81,6 +88,13 @@ const NavbarWrapper = styled.div`
       animation: navButtonBackgroundAppear 0s;
       animation-fill-mode: backwards;
       animation-delay: 11s;
+
+      @media (max-width: 56.25em) {
+        height: 4rem; // -2
+        width: 4rem; // -2
+        top: 55.5rem; // +49
+        right: 3.5rem; // -3
+      }
     }
 
     &__nav {
@@ -142,6 +156,10 @@ const NavbarWrapper = styled.div`
       position: relative;
       margin-top: 3.5rem;
 
+      @media (max-width: 56.25em) {
+        margin-top: 2.5rem;
+      }
+
       &,
       &::before,
       &::after {
@@ -149,6 +167,9 @@ const NavbarWrapper = styled.div`
         height: 2px;
         background-color: white;
         display: inline-block;
+        @media (max-width: 56.25em) {
+          width: 2.5rem;
+        }
       }
       &::before,
       &::after {
