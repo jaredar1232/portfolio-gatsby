@@ -107,6 +107,10 @@ const NavbarWrapper = styled.div`
       opacity: 0;
       width: 0;
       transition: all 0.8s;
+
+      @media (max-width: 56.25em) {
+        z-index: -150;
+      }
     }
 
     &__list {
@@ -219,6 +223,12 @@ const NavbarWrapper = styled.div`
       rgb(255, 255, 255),
       rgb(255, 255, 255)
     );
+  }
+
+  .navigation__checkbox:checked ~ .navigation__nav {
+    @media (max-width: 56.25em) {
+      z-index: 150;
+    }
   }
 `
 
