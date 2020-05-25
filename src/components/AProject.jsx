@@ -193,6 +193,7 @@ export default class AProject extends Component {
               muted
               loop
               autoPlay
+              playsinline
               className="project"
             >
               <source src={aProject.video} type="video/mp4"></source>
