@@ -190,8 +190,7 @@ export default class AProject extends Component {
             <video
               width="100%"
               height="auto"
-              playsinline
-              webkit-playsinline
+              playsInline
               muted
               loop
               autoPlay
