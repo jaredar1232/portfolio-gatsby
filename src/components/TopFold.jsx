@@ -44,10 +44,6 @@ const TopFoldWrapper = styled.div`
     animation-delay: 0.5s;
     animation-fill-mode: backwards;
 
-    @media (max-width: 75em) {
-      font-size: 300%;
-    }
-
     @media (max-width: 56.25em) {
       font-size: 130%;
       letter-spacing: 1rem;
@@ -66,10 +62,6 @@ const TopFoldWrapper = styled.div`
     animation: fadeIn 2.5s;
     animation-delay: 2.5s;
     animation-fill-mode: backwards;
-
-    @media (max-width: 75em) {
-      font-size: 150%;
-    }
 
     @media (max-width: 56.25em) {
       font-size: 60%;
