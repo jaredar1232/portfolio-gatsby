@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from "react"
+import styled from "styled-components"
 
 const TopFoldWrapper = styled.div`
   .header {
@@ -14,6 +14,10 @@ const TopFoldWrapper = styled.div`
     background-position: right;
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);
   }
+
+  ////////// MEDIA QUERIES ///////////
+
+  // 1em = 16px
 
   .header__text-box {
     position: absolute;
@@ -40,6 +44,15 @@ const TopFoldWrapper = styled.div`
     animation-delay: 0.5s;
     animation-fill-mode: backwards;
 
+    @media (max-width: 75em) {
+      font-size: 300%;
+    }
+
+    @media (max-width: 56.25em) {
+      font-size: 130%;
+      letter-spacing: 1rem;
+    }
+
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */
   }
@@ -53,6 +66,15 @@ const TopFoldWrapper = styled.div`
     animation: fadeIn 2.5s;
     animation-delay: 2.5s;
     animation-fill-mode: backwards;
+
+    @media (max-width: 75em) {
+      font-size: 150%;
+    }
+
+    @media (max-width: 56.25em) {
+      font-size: 60%;
+      letter-spacing: 0.8rem;
+    }
   }
 
   @keyframes moveInTop {
@@ -112,6 +134,10 @@ const TopFoldWrapper = styled.div`
     color: lightgrey;
     border: darkgrey solid 1px;
     -webkit-backface-visibility: hidden;
+
+    @media (max-width: 56.25em) {
+      padding: 1rem 3.5rem;
+    }
   }
 
   .btn:hover {
@@ -175,7 +201,7 @@ const TopFoldWrapper = styled.div`
     top: 0;
     height: 100vh;
   }
-`;
+`
 
 export default class TopFold extends Component {
   render() {
@@ -195,6 +221,6 @@ export default class TopFold extends Component {
           </header>
         </div>
       </TopFoldWrapper>
-    );
+    )
   }
 }
