@@ -191,6 +191,7 @@ export default class AProject extends Component {
               width="100%"
               height="auto"
               playsinline
+              webkit-playsinline
               muted
               loop
               autoPlay
@@ -198,12 +199,6 @@ export default class AProject extends Component {
             >
               <source src={aProject.video} type="video/mp4"></source>
               Your browser does not support the video tag.
-              <img
-                alt=""
-                src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/NikeImg.png"
-                width="100%"
-                height="auto"
-              />
             </video>
           </div>
           <div className="btn-container">
