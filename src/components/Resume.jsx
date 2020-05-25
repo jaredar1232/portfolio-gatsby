@@ -7,6 +7,9 @@ const ResumeWrapper = styled.div`
     padding: 40rem 0 10rem 0;
     color: white;
     margin-top: -20vh;
+    @media (max-width: 56.25em) {
+      padding: 25rem 0 5rem 0;
+    }
   }
 
   .u-center-text {
@@ -20,6 +23,11 @@ const ResumeWrapper = styled.div`
     width: 50%;
     height: 100%;
     margin: auto;
+
+    @media (max-width: 56.25em) {
+      width: 80%;
+      padding-top: 115%;
+    }
   }
 
   .iframe {

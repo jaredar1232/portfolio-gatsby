@@ -10,7 +10,7 @@ const AboutMeWrapper = styled.div`
     z-index: 7;
 
     @media (max-width: 56.25em) {
-      padding: 20rem 0 80rem 0;
+      padding: 20rem 0 85rem 0;
     }
   }
 

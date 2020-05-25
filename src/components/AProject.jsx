@@ -11,6 +11,10 @@ const AProjectWrapper = styled.div`
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
     padding: 2rem 1rem;
     max-width: 125rem;
+
+    @media (max-width: 56.25em) {
+      width: 95%;
+    }
   }
 
   .heading-tertiary {
@@ -18,6 +22,11 @@ const AProjectWrapper = styled.div`
     font-weight: 700;
     text-transform: uppercase;
     margin-left: 8rem;
+
+    @media (max-width: 56.25em) {
+      font-size: 2.5rem;
+      margin-left: 2.5rem;
+    }
   }
 
   .image-container {
@@ -136,6 +145,9 @@ const AProjectWrapper = styled.div`
     list-style-position: inside;
     margin: 2rem;
     text-align: left;
+    @media (max-width: 56.25em) {
+      font-size: 1.6rem;
+    }
   }
 `
 

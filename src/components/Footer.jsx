@@ -1,11 +1,15 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from "react"
+import styled from "styled-components"
 
 const FooterWrapper = styled.div`
   .section-footer {
     background-color: rgb(3, 3, 3);
     padding: 10rem 0 10rem 0;
     color: white;
+
+    @media (max-width: 56.25em) {
+      padding: 2rem 0 2rem 0;
+    }
   }
 
   .icon-container {
@@ -14,6 +18,10 @@ const FooterWrapper = styled.div`
     width: 40%;
     height: auto;
     margin: 0 auto;
+
+    @media (max-width: 56.25em) {
+      width: 100%;
+    }
   }
 
   .footer-icon {
@@ -44,6 +52,10 @@ const FooterWrapper = styled.div`
       box-shadow: 0 0.25rem 0.5rem rgba(255, 255, 255, 0.2);
       transform: translateY(0);
     }
+
+    @media (max-width: 56.25em) {
+      margin: 1rem;
+    }
   }
 
   .anchor-tag {
@@ -64,7 +76,7 @@ const FooterWrapper = styled.div`
     text-align: center;
     font-size: 1.2rem;
   }
-`;
+`
 
 export default class Footer extends Component {
   render() {
@@ -98,6 +110,6 @@ export default class Footer extends Component {
           </div>
         </section>
       </FooterWrapper>
-    );
+    )
   }
 }

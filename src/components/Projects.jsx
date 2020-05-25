@@ -12,6 +12,13 @@ const ProjectsWrapper = styled.div`
     & > * {
       transform: skewY(7deg);
     }
+
+    @media (max-width: 56.25em) {
+      transform: skewY(-16deg);
+      & > * {
+        transform: skewY(16deg);
+      }
+    }
   }
 
   @media screen and (min-width: 140rem) {
@@ -40,6 +47,10 @@ const ProjectsWrapper = styled.div`
     -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 3rem;
+
+    @media (max-width: 56.25em) {
+      font-size: 4rem;
+    }
   }
 `
 

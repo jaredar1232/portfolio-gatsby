@@ -7,6 +7,9 @@ const ContactWrapper = styled.div`
     background-color: #181e2e;
     padding: 0 0 5rem 0;
     color: white;
+    @media (max-width: 56.25em) {
+      padding: 0 0 2rem 0;
+    }
   }
 
   .heading-secondary {
@@ -22,6 +25,10 @@ const ContactWrapper = styled.div`
     -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 3rem;
+
+    @media (max-width: 56.25em) {
+      font-size: 4rem;
+    }
   }
 
   .u-center-text {
