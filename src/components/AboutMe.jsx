@@ -8,6 +8,10 @@ const AboutMeWrapper = styled.div`
     color: white;
     margin-top: -20vh;
     z-index: 7;
+
+    @media (max-width: 56.25em) {
+      padding: 20rem 0 80rem 0;
+    }
   }
 
   .u-center-text {
@@ -27,6 +31,10 @@ const AboutMeWrapper = styled.div`
     -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 3rem;
+
+    @media (max-width: 56.25em) {
+      font-size: 4rem;
+    }
   }
 
   .heading-tertiary {
@@ -39,6 +47,9 @@ const AboutMeWrapper = styled.div`
     font-size: 2.5rem;
     &:not(:first-child) {
       margin-bottom: 3rem;
+    }
+    @media (max-width: 56.25em) {
+      font-size: 1.6rem;
     }
   }
 
@@ -68,6 +79,11 @@ const AboutMeWrapper = styled.div`
   .writing {
     margin-right: 6rem;
     margin-top: 3rem;
+
+    @media (max-width: 56.25em) {
+      margin-right: 3rem;
+      margin-top: 0rem;
+    }
   }
 
   .composition {
@@ -79,6 +95,11 @@ const AboutMeWrapper = styled.div`
       position: absolute;
       left: 9rem;
       top: 4rem;
+
+      @media (max-width: 56.25em) {
+        left: 1rem;
+        top: 0rem;
+      }
     }
   }
 `
