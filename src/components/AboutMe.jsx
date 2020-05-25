@@ -34,6 +34,7 @@ const AboutMeWrapper = styled.div`
 
     @media (max-width: 56.25em) {
       font-size: 4rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -50,6 +51,7 @@ const AboutMeWrapper = styled.div`
     }
     @media (max-width: 56.25em) {
       font-size: 1.6rem;
+      margin: 0 1rem;
     }
   }
 
