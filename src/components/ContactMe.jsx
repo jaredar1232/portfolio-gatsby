@@ -157,7 +157,7 @@ export default class Contact extends React.Component {
         <section className="section-contact">
           <div className="u-center-text">
             <h2 className="heading-secondary" id="contact-me">
-              Let's Work Together!
+              Contact Me
             </h2>
           </div>
 

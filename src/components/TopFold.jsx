@@ -36,9 +36,11 @@ const TopFoldWrapper = styled.div`
     font-weight: 400;
     letter-spacing: 3rem;
 
-    animation: moveInTop 1.5s ease-out;
-    animation-delay: 0.5s;
-    animation-fill-mode: backwards;
+    @media (min-width: 56.26em) {
+      animation: moveInTop 1.5s ease-out;
+      animation-delay: 0.5s;
+      animation-fill-mode: backwards;
+    }
 
     @media (max-width: 56.25em) {
       font-size: 130%;
@@ -52,9 +54,11 @@ const TopFoldWrapper = styled.div`
     font-weight: 700;
     letter-spacing: 1.75rem;
 
-    animation: fadeIn 2.5s;
-    animation-delay: 2.5s;
-    animation-fill-mode: backwards;
+    @media (min-width: 56.26em) {
+      animation: fadeIn 2.5s;
+      animation-delay: 2.5s;
+      animation-fill-mode: backwards;
+    }
 
     @media (max-width: 56.25em) {
       font-size: 60%;
@@ -164,9 +168,12 @@ const TopFoldWrapper = styled.div`
 
   .btn--white::after {
     background-color: rgba(0, 0, 0, 0.2);
-    animation: moveInButton 1s;
-    animation-fill-mode: backwards;
-    animation-delay: 1.5s;
+
+    @media (min-width: 56.26em) {
+      animation: moveInButton 1s;
+      animation-fill-mode: backwards;
+      animation-delay: 1.5s;
+    }
   }
 
   .btn:hover::after {
@@ -175,9 +182,11 @@ const TopFoldWrapper = styled.div`
   }
 
   .btn--animated {
-    animation: moveInButton 1s;
-    animation-fill-mode: backwards;
-    animation-delay: 1.5s;
+    @media (min-width: 56.26em) {
+      animation: moveInButton 1s;
+      animation-fill-mode: backwards;
+      animation-delay: 1.5s;
+    }
   }
 
   .bottom-border {
