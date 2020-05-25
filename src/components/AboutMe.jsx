@@ -73,6 +73,12 @@ const AboutMeWrapper = styled.div`
     .col-1-of-2 {
       width: calc((100% - 6rem) / 2);
       float: right;
+
+      @media (max-width: 56.25em) {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
     }
   }
 
@@ -97,7 +103,10 @@ const AboutMeWrapper = styled.div`
       top: 4rem;
 
       @media (max-width: 56.25em) {
-        left: 1rem;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
         top: 0rem;
       }
     }
