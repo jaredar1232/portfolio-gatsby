@@ -50,7 +50,11 @@ const ProjectsWrapper = styled.div`
 
     @media (max-width: 56.25em) {
       font-size: 4rem;
-      color: black;
+      background-image: linear-gradient(
+        to right bottom,
+        rgb(102, 201, 255),
+        rgb(120, 139, 249)
+      );
     }
   }
 `
