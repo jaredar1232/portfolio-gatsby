@@ -110,6 +110,7 @@ const AboutMeWrapper = styled.div`
         margin-left: auto;
         margin-right: auto;
         top: 0rem;
+        width: 25rem;
       }
     }
   }
