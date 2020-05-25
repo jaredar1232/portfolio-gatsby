@@ -69,8 +69,8 @@ const NavbarWrapper = styled.div`
       @media (max-width: 56.25em) {
         height: 5rem; // -2
         width: 5rem; // -2
-        top: 55rem; // +49
-        right: 3rem; // -3
+        top: 3rem;
+        right: 3rem;
       }
     }
 
@@ -92,8 +92,8 @@ const NavbarWrapper = styled.div`
       @media (max-width: 56.25em) {
         height: 4rem; // -2
         width: 4rem; // -2
-        top: 55.5rem; // +49
-        right: 3.5rem; // -3
+        top: 3.5rem;
+        right: 3.5rem;
       }
     }
 
