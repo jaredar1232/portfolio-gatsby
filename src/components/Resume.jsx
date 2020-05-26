@@ -52,6 +52,7 @@ export default class Resume extends Component {
             <iframe
               src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Resume.pdf"
               className="iframe"
+              type="application/pdf"
             ></iframe>
           </div>
         </section>

@@ -53,6 +53,7 @@ const TopFoldWrapper = styled.div`
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
+    margin-top: 1rem;
 
     @media (min-width: 56.26em) {
       animation: fadeIn 2.5s;
