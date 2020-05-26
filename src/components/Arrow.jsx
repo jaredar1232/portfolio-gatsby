@@ -15,7 +15,7 @@ const ArrowWrapper = styled.div`
     height: 82px;
     position: absolute; /* don't forget set container to relative */
     left: 50%;
-    margin-left: -3.5rem;
+    margin-left: -3.2rem;
     bottom: 5%;
     z-index: 999;
   }
