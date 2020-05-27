@@ -87,7 +87,7 @@ const AProjectWrapper = styled.div`
       display: inline-block;
       text-decoration: none;
       border-bottom: 1px solid rgb(120, 139, 249);
-      padding: 5px;
+      padding: 0.5rem 1rem;
       transition: all 0.2s;
     }
   }
@@ -118,7 +118,7 @@ const AProjectWrapper = styled.div`
     display: inline-block;
     text-decoration: none;
     border-bottom: 1px solid rgb(120, 139, 249);
-    padding: 5px;
+    padding: 0.5rem 1rem;
     transition: all 0.2s;
     cursor: pointer;
   }
