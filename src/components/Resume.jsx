@@ -45,6 +45,10 @@ const ResumeWrapper = styled.div`
     &:hover {
       background-color: transparent;
     }
+
+    @media (max-width: 56.25em) {
+      width: 80%;
+    }
   }
 
   .resume-button {
@@ -65,6 +69,7 @@ const ResumeWrapper = styled.div`
     padding: 2rem 1rem;
     border-radius: 10px;
     transition: all 0.3s;
+    text-decoration: none;
 
     &:hover {
       -webkit-background-clip: unset;
@@ -80,6 +85,10 @@ const ResumeWrapper = styled.div`
     &:active {
       box-shadow: 0 0.25rem 0.5rem rgba(255, 255, 255, 0.2);
       transform: translateY(0);
+    }
+
+    @media (max-width: 56.25em) {
+      padding: 1rem;
     }
   }
 `
