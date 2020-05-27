@@ -232,7 +232,7 @@ const NavbarWrapper = styled.div`
   }
 `
 
-export default class Navbar extends React.Component {
+export default class Navbar extends Component {
   constructor(props) {
     super(props)
     this.state = {}
