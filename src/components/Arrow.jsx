@@ -14,9 +14,8 @@ const ArrowWrapper = styled.div`
     width: 6rem;
     height: 8rem;
     position: absolute;
-    left: 50%;
-    margin-left: -3.2rem;
-    bottom: 5%;
+    left: calc(50% - 3rem);
+    bottom: 10%;
     z-index: 999;
   }
   /* set arrow styles */
@@ -25,7 +24,6 @@ const ArrowWrapper = styled.div`
     stroke-width: 2px;
     fill: transparent;
     animation: down 2.5s infinite;
-    animation-delay: 5s;
   }
 
   /* arrow keyframe animation */

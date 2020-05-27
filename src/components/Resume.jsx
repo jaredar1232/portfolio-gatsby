@@ -12,63 +12,107 @@ const ResumeWrapper = styled.div`
     }
   }
 
-  .u-center-text {
-    text-align: center;
-  }
+  // .iframe-container {
+  //   overflow: hidden;
+  //   padding-top: 67%;
+  //   position: relative;
+  //   width: 50%;
+  //   height: 100%;
+  //   margin: auto;
 
-  .iframe-container {
-    overflow: hidden;
-    padding-top: 67%;
-    position: relative;
-    width: 50%;
-    height: 100%;
-    margin: auto;
+  //   @media (max-width: 56.25em) {
+  //     width: 80%;
+  //     padding-top: 115%;
+  //   }
+  // }
 
-    @media (max-width: 56.25em) {
-      width: 80%;
-      padding-top: 115%;
+  // .iframe {
+  //   border: none;
+  //   left: 0;
+  //   position: absolute;
+  //   top: 0;
+  //   width: 100%;
+  //   height: 100%;
+  // }
+
+  .resume-button-container {
+    width: 20%;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: transparent;
     }
-
-    // position: relative;
-    // padding-bottom: 56.25%; /* 16:9 */
-    // padding-top: 25px;
-    // height: 0;
   }
 
-  .iframe {
-    border: none;
-    left: 0;
-    position: absolute;
-    top: 0;
+  .resume-button {
+    display: inline-block;
     width: 100%;
     height: 100%;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      to right bottom,
+      rgb(102, 201, 255),
+      rgb(120, 139, 249)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    transition: all 0.3s;
 
-    // @media (max-width: 56.25em) {
-    // }
+    &:hover {
+      -webkit-background-clip: unset;
+      color: white;
+      text-decoration: none;
+      -webkit-background-clip: unset;
+      color: white;
+      box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4);
+      transform: translateY(-2px);
+      border-radius: 10px;
+    }
 
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // width: 100%;
-    // height: 100%;
+    &:active {
+      box-shadow: 0 0.25rem 0.5rem rgba(255, 255, 255, 0.2);
+      transform: translateY(0);
+    }
   }
 `
-// .iframe-container-4x3 {
-//   padding-top: 75%;
-// }
 
 export default class Resume extends Component {
   render() {
     return (
       <ResumeWrapper>
         <section className="section-resume">
-          <div className="iframe-container" id="resume">
+          <div className="resume-button-container">
+            <a
+              href="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Resume.pdf"
+              target="_blank"
+              className="resume-button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path d="M23.995 24h-1.995c0-3.104.119-3.55-1.761-3.986-2.877-.664-5.594-1.291-6.584-3.458-.361-.791-.601-2.095.31-3.814 2.042-3.857 2.554-7.165 1.403-9.076-1.341-2.229-5.413-2.241-6.766.034-1.154 1.937-.635 5.227 1.424 9.025.93 1.712.697 3.02.338 3.815-.982 2.178-3.675 2.799-6.525 3.456-1.964.454-1.839.87-1.839 4.004h-1.995l-.005-1.241c0-2.52.199-3.975 3.178-4.663 3.365-.777 6.688-1.473 5.09-4.418-4.733-8.729-1.35-13.678 3.732-13.678 4.983 0 8.451 4.766 3.732 13.678-1.551 2.928 1.65 3.624 5.09 4.418 2.979.688 3.178 2.143 3.178 4.663l-.005 1.241zm-13.478-6l.91 2h1.164l.92-2h-2.994zm2.995 6l-.704-3h-1.615l-.704 3h3.023z" />
+              </svg>
+              &nbsp; View Resume
+            </a>
+          </div>
+          {/* <div className="iframe-container" id="resume">
             <iframe
               src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Resume.pdf"
               className="iframe"
               type="application/pdf"
             ></iframe>
-          </div>
+          </div> */}
         </section>
       </ResumeWrapper>
     )
