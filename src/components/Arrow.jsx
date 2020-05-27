@@ -12,8 +12,8 @@ const ArrowWrapper = styled.div`
   /* set arrow positioning */
   .arrow {
     width: 6rem;
-    height: 82px;
-    position: absolute; /* don't forget set container to relative */
+    height: 8rem;
+    position: absolute;
     left: 50%;
     margin-left: -3.2rem;
     bottom: 5%;

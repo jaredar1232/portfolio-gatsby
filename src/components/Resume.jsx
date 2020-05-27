@@ -28,6 +28,11 @@ const ResumeWrapper = styled.div`
       width: 80%;
       padding-top: 115%;
     }
+
+    // position: relative;
+    // padding-bottom: 56.25%; /* 16:9 */
+    // padding-top: 25px;
+    // height: 0;
   }
 
   .iframe {
@@ -37,6 +42,15 @@ const ResumeWrapper = styled.div`
     top: 0;
     width: 100%;
     height: 100%;
+
+    // @media (max-width: 56.25em) {
+    // }
+
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
   }
 `
 // .iframe-container-4x3 {
