@@ -37,7 +37,7 @@ const ProjectsWrapper = styled.div`
   }
 
   .heading-secondary {
-    font-size: 5rem;
+    font-size: 5.5rem;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;

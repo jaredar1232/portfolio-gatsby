@@ -18,14 +18,14 @@ const AProjectWrapper = styled.div`
   }
 
   .heading-tertiary {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+    font-weight: 400;
     text-transform: uppercase;
-    margin-left: 8rem;
+    text-align: center;
+    color: black;
 
     @media (max-width: 56.25em) {
       font-size: 2.5rem;
-      margin-left: 2.5rem;
     }
   }
 

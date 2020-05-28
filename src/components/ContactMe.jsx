@@ -13,7 +13,7 @@ const ContactWrapper = styled.div`
   }
 
   .heading-secondary {
-    font-size: 5rem;
+    font-size: 5.5rem;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
@@ -41,7 +41,7 @@ const ContactWrapper = styled.div`
     padding: 20px;
     margin: 0 auto;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     max-width: 55rem;
   }
 
@@ -53,7 +53,7 @@ const ContactWrapper = styled.div`
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
     font-family: "Lato", sans-serif;
   }
@@ -67,7 +67,7 @@ const ContactWrapper = styled.div`
   }
 
   .form-submit {
-    width: 20%;
+    width: 30%;
     background-image: linear-gradient(
       to right bottom,
       rgb(102, 201, 255),
@@ -79,7 +79,7 @@ const ContactWrapper = styled.div`
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2rem;
     min-width: 8rem;
     transition: all 0.4s;
 
