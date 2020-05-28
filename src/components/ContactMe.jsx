@@ -24,7 +24,7 @@ const ContactWrapper = styled.div`
     );
     -webkit-background-clip: text;
     color: transparent;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
 
     @media (max-width: 56.25em) {
       font-size: 4rem;
