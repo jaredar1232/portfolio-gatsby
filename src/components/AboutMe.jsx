@@ -135,9 +135,9 @@ export default class AboutMe extends Component {
                   software; intuitive for clients to interact with and
                   refreshing for developers to read. I have experience solving
                   problems with a wide variety of technologies and love adding
-                  new ones to my tool kit. I'm really interested in tech,
-                  medicine, health & fitness, and finance because I enjoy
-                  pushing personal and societal growth.
+                  to my tool kit. I'm really interested in tech, medicine,
+                  health & fitness, and finance because I enjoy pushing personal
+                  and societal growth.
                 </p>
               </div>
               <div className="col-1-of-2">
