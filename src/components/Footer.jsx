@@ -35,17 +35,19 @@ const FooterWrapper = styled.div`
     transition: all 0.3s;
     cursor: pointer;
 
-    &:hover {
-      border: solid 2px rgb(102, 201, 255);
-      background-image: linear-gradient(
-        to right bottom,
-        rgb(102, 201, 255),
-        rgb(120, 139, 249)
-      );
-      -webkit-background-clip: text;
-      color: transparent;
-      box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4);
-      transform: translateY(-2px);
+    @media (hover: hover) {
+      &:hover {
+        border: solid 2px rgb(102, 201, 255);
+        background-image: linear-gradient(
+          to right bottom,
+          rgb(102, 201, 255),
+          rgb(120, 139, 249)
+        );
+        -webkit-background-clip: text;
+        color: transparent;
+        box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4);
+        transform: translateY(-2px);
+      }
     }
 
     &:active {

@@ -130,12 +130,14 @@ const TopFoldWrapper = styled.div`
     }
   }
 
-  .btn:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    background-color: rgba(0, 0, 0, 0.8);
-    border: rgb(102, 201, 255) solid 1px;
-    color: rgb(102, 201, 255);
+  @media (hover: hover) {
+    .btn:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.8);
+      border: rgb(102, 201, 255) solid 1px;
+      color: rgb(102, 201, 255);
+    }
   }
 
   .btn:active {
@@ -177,9 +179,11 @@ const TopFoldWrapper = styled.div`
     }
   }
 
-  .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
+  @media (hover: hover) {
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
   }
 
   .btn--animated {

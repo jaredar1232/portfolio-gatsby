@@ -92,12 +92,14 @@ const AProjectWrapper = styled.div`
     }
   }
 
-  .btn-text:hover {
-    -webkit-background-clip: unset;
-    color: white;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
-    border-radius: 4px;
+  @media (hover: hover) {
+    .btn-text:hover {
+      -webkit-background-clip: unset;
+      color: white;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+      border-radius: 4px;
+    }
   }
 
   .btn-text:active {
@@ -123,13 +125,15 @@ const AProjectWrapper = styled.div`
     cursor: pointer;
   }
 
-  .btn--2:hover,
-  .btn--2:focus {
-    -webkit-background-clip: unset;
-    color: white;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
-    border-radius: 4px;
+  @media (hover: hover) {
+    .btn--2:hover,
+    .btn--2:focus {
+      -webkit-background-clip: unset;
+      color: white;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+      border-radius: 4px;
+    }
   }
 
   .btn--2:active {
@@ -152,19 +156,6 @@ const AProjectWrapper = styled.div`
 `
 
 export default class AProject extends Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     video: true,
-  //   }
-  // }
-
-  // displayChanger() {
-  //   this.setState({
-  //     video: !this.state.video,
-  //   })
-  // }
-
   render() {
     const aProject = this.props.aProject
     const projectWidth = aProject.width

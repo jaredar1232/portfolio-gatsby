@@ -42,8 +42,10 @@ const ResumeWrapper = styled.div`
     background-color: white;
     border-radius: 10px;
 
-    &:hover {
-      background-color: transparent;
+    @media (hover: hover) {
+      &:hover {
+        background-color: transparent;
+      }
     }
 
     @media (max-width: 56.25em) {
@@ -71,15 +73,17 @@ const ResumeWrapper = styled.div`
     transition: all 0.3s;
     text-decoration: none;
 
-    &:hover {
-      -webkit-background-clip: unset;
-      color: white;
-      text-decoration: none;
-      -webkit-background-clip: unset;
-      color: white;
-      box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4);
-      transform: translateY(-2px);
-      border-radius: 10px;
+    @media (hover: hover) {
+      &:hover {
+        -webkit-background-clip: unset;
+        color: white;
+        text-decoration: none;
+        -webkit-background-clip: unset;
+        color: white;
+        box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4);
+        transform: translateY(-2px);
+        border-radius: 10px;
+      }
     }
 
     &:active {

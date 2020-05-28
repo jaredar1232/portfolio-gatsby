@@ -83,15 +83,17 @@ const ContactWrapper = styled.div`
     min-width: 8rem;
     transition: all 0.4s;
 
-    &:hover {
-      background-image: linear-gradient(
-        to right bottom,
-        rgb(86, 171, 216),
-        rgb(101, 116, 204)
-      );
-      box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4);
-      transform: translateY(-2px);
-      border-radius: 4px;
+    @media (hover: hover) {
+      &:hover {
+        background-image: linear-gradient(
+          to right bottom,
+          rgb(86, 171, 216),
+          rgb(101, 116, 204)
+        );
+        box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4);
+        transform: translateY(-2px);
+        border-radius: 4px;
+      }
     }
 
     &:active {
