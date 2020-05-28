@@ -90,6 +90,7 @@ export default class Footer extends Component {
               href="https://www.linkedin.com/in/jared-rothenberg"
               className="footer-icon"
               target="_blank"
+              rel="noreferrer"
             >
               <i className="fa fa-linkedin"></i>
             </a>
@@ -98,6 +99,7 @@ export default class Footer extends Component {
               href="https://github.com/jaredar1232"
               className="footer-icon"
               target="_blank"
+              rel="noreferrer"
             >
               <i className="fa fa-github"></i>
             </a>

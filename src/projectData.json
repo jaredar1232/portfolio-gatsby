@@ -12,7 +12,18 @@
         "Implemented CRUD operations & sort functionality by querying a Mongo database with nested subdocuments ",
         "Rendered a single page comprised of 3 services (nav, viewer, reviews) that communicate via url and proxy server "
       ],
-      "icons": []
+      "icons": [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "AWS",
+        "Faker.js",
+        "styled-components",
+        "http-proxy",
+        "HTML5",
+        "CSS3"
+      ]
     }
   },
   {
@@ -27,7 +38,15 @@
         "Utilized Firebase for authentication, adaptable storage, and session state persistence ",
         "Created a habit tracking app from the ground up with a mobile first emphasis"
       ],
-      "icons": []
+      "icons": [
+        "Firebase",
+        "React",
+        "Node.js",
+        "Chakra",
+        "styled-components",
+        "HTML5",
+        "CSS3"
+      ]
     }
   },
   {
@@ -43,7 +62,15 @@
         "Optimized query times between Mongoose ODM, MongoDB, and PostgreSQL; used indexing to reduce queries to an average of under 0.1 ms per request ",
         "Deployed separate database and server; optimized 1 EC2 instance to 2000 rps, 0% error rate, and 126ms average response time and 3 nginx load balanced EC2 instances to 3000 rps, 0% error rate, and 63ms response time"
       ],
-      "icons": []
+      "icons": [
+        "MongoDB",
+        "PostgreSQL",
+        "Express.js",
+        "React",
+        "Node.js",
+        "Jest",
+        "AWS"
+      ]
     }
   }
 ]

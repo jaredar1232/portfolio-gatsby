@@ -107,6 +107,7 @@ export default class Resume extends Component {
               href="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Resume.pdf"
               target="_blank"
               className="resume-button"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

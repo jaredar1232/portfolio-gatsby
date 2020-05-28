@@ -181,7 +181,12 @@ export default class AProject extends Component {
           </div>
           <div className="btn-container">
             <div className="btn-position">
-              <a href={aProject.github} className="btn-text" target="_blank">
+              <a
+                href={aProject.github}
+                className="btn-text"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
