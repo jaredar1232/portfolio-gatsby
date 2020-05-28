@@ -51,3 +51,7 @@ body {
   background: rgb(75, 101, 124);
   border-radius: 10px;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

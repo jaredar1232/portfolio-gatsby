@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import AProject from "../components/AProject.jsx"
+import Modal from "../components/Modal.jsx"
+import projectDataArray from "../projectData.json"
 
 const ProjectsWrapper = styled.div`
   .project-page-buffer {
@@ -56,58 +58,63 @@ const ProjectsWrapper = styled.div`
 `
 
 export default class Projects extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      showModal: false,
+      modalDetails: {},
+    }
+  }
+
+  modalOnClick = modalData => {
+    this.setState({
+      modalDetails: modalData,
+      showModal: true,
+    })
+    document.body.classList.add("no-scroll")
+    const projectArray = document.getElementsByClassName("project")
+    for (var i = 0; i < projectArray.length; i++) {
+      projectArray[i].pause()
+    }
+  }
+
+  closeModal = () => {
+    this.setState({
+      showModal: false,
+    })
+    document.body.classList.remove("no-scroll")
+    const projectArray = document.getElementsByClassName("project")
+    for (var i = 0; i < projectArray.length; i++) {
+      projectArray[i].play()
+    }
+  }
+
   render() {
-    const projectDataArray = [
-      {
-        name: "Nike Mock Up",
-        width: 85,
-        video: "https://jaredsportfolio.s3-us-west-1.amazonaws.com/Nike.mp4",
-        github: "https://github.com/jaredar1232/Nike-Mock-Up",
-        details: [
-          "Built a Nike product display page following a micro-service architecture",
-          "Randomly generated 5000+ reviews to consistently correlate with 100 real nike products",
-          "Implemented CRUD operations & sort functionality by querying a Mongo database with nested subdocuments ",
-          "Rendered a single page comprised of 3 services (nav, viewer, reviews) that communicate via url and proxy server ",
-        ],
-      },
-      {
-        name: "Streak Tracker",
-        width: 35,
-        video: "https://jaredsportfolio.s3-us-west-1.amazonaws.com/Streak.mp4",
-        github: "https://github.com/jaredar1232/Streak-Activity-Tracker",
-        details: [
-          "Followed monolithic architecture to produce a seamless codebase and practice code review workflow",
-          "Utilized Firebase for authentication, adaptable storage, and session state persistence ",
-          "Created a habit tracking app from the ground up with a mobile first emphasis",
-        ],
-      },
-      {
-        name: "System Design",
-        width: 85,
-        video:
-          "https://jaredsportfolio.s3-us-west-1.amazonaws.com/SystemDesign.mp4",
-        github: "https://github.com/jaredar1232/System-Design--BestBuy",
-        details: [
-          "Expanded data set from 100 unique records to 10,000,000 unique records",
-          "Reduced database setup time by 80% by using automated CSV generation and batch import (~12 min down to ~2.5 min) ",
-          "Optimized query times between Mongoose ODM, MongoDB, and PostgreSQL; used indexing to reduce queries to an average of under 0.1 ms per request ",
-          "Deployed separate database and server; optimized 1 EC2 instance to 2000 rps, 0% error rate, and 126ms average response time and 3 nginx load balanced EC2 instances to 3000 rps, 0% error rate, and 63ms response time",
-        ],
-      },
-    ]
     return (
-      <ProjectsWrapper>
-        <section className="project-page-buffer">
-          <div className="u-center-text">
-            <h2 className="heading-secondary" id="applications">
-              Applications
-            </h2>
-          </div>
-          {projectDataArray.map(aProject => (
-            <AProject aProject={aProject} key={aProject.name} />
-          ))}
-        </section>
-      </ProjectsWrapper>
+      <>
+        <Modal
+          modalDetails={this.state.modalDetails}
+          closeModal={this.closeModal}
+          showModal={this.state.showModal}
+        />
+        <ProjectsWrapper>
+          <section className="project-page-buffer">
+            <div className="u-center-text">
+              <h2 className="heading-secondary" id="applications">
+                Applications
+              </h2>
+            </div>
+            {projectDataArray.map(aProject => (
+              <AProject
+                aProject={aProject}
+                key={aProject.name}
+                modalOnClick={this.modalOnClick}
+                showModal={this.state.showModal}
+              />
+            ))}
+          </section>
+        </ProjectsWrapper>
+      </>
     )
   }
 }

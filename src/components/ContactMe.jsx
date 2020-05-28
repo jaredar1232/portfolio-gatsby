@@ -89,13 +89,13 @@ const ContactWrapper = styled.div`
         rgb(86, 171, 216),
         rgb(101, 116, 204)
       );
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4);
       transform: translateY(-2px);
       border-radius: 4px;
     }
 
     &:active {
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0.25rem 0.5rem rgba(255, 255, 255, 0.2);
       transform: translateY(0);
     }
   }

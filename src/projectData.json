@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Nike Mock Up",
+    "width": 85,
+    "video": "https://jaredsportfolio.s3-us-west-1.amazonaws.com/Nike.mp4",
+    "github": "https://github.com/jaredar1232/Nike-Mock-Up",
+    "details": {
+      "description": "nike description",
+      "keyPoints": [
+        "Built a Nike product display page following a micro-service architecture",
+        "Randomly generated 5000+ reviews to consistently correlate with 100 real nike products",
+        "Implemented CRUD operations & sort functionality by querying a Mongo database with nested subdocuments ",
+        "Rendered a single page comprised of 3 services (nav, viewer, reviews) that communicate via url and proxy server "
+      ],
+      "icons": []
+    }
+  },
+  {
+    "name": "Streak Tracker",
+    "width": 35,
+    "video": "https://jaredsportfolio.s3-us-west-1.amazonaws.com/Streak.mp4",
+    "github": "https://github.com/jaredar1232/Streak-Activity-Tracker",
+    "details": {
+      "description": "streak description",
+      "keyPoints": [
+        "Followed monolithic architecture to produce a seamless codebase and practice code review workflow",
+        "Utilized Firebase for authentication, adaptable storage, and session state persistence ",
+        "Created a habit tracking app from the ground up with a mobile first emphasis"
+      ],
+      "icons": []
+    }
+  },
+  {
+    "name": "System Design",
+    "width": 85,
+    "video": "https://jaredsportfolio.s3-us-west-1.amazonaws.com/SystemDesign.mp4",
+    "github": "https://github.com/jaredar1232/System-Design--BestBuy",
+    "details": {
+      "description": "system design description",
+      "keyPoints": [
+        "Expanded data set from 100 unique records to 10,000,000 unique records",
+        "Reduced database setup time by 80% by using automated CSV generation and batch import (~12 min down to ~2.5 min) ",
+        "Optimized query times between Mongoose ODM, MongoDB, and PostgreSQL; used indexing to reduce queries to an average of under 0.1 ms per request ",
+        "Deployed separate database and server; optimized 1 EC2 instance to 2000 rps, 0% error rate, and 126ms average response time and 3 nginx load balanced EC2 instances to 3000 rps, 0% error rate, and 63ms response time"
+      ],
+      "icons": []
+    }
+  }
+]
