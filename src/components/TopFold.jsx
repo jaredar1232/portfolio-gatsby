@@ -28,6 +28,10 @@ const TopFoldWrapper = styled.div`
     text-transform: uppercase;
     margin-bottom: 6rem;
     backface-visibility: hidden;
+
+    @media (max-width: 56.25em) {
+      margin: 6rem 0 12rem 0;
+    }
   }
 
   .heading-primary--main {
@@ -43,7 +47,7 @@ const TopFoldWrapper = styled.div`
     }
 
     @media (max-width: 56.25em) {
-      font-size: 130%;
+      font-size: 2.8rem;
       letter-spacing: 1rem;
     }
   }
@@ -62,7 +66,7 @@ const TopFoldWrapper = styled.div`
     }
 
     @media (max-width: 56.25em) {
-      font-size: 60%;
+      font-size: 1.3rem;
       letter-spacing: 0.8rem;
     }
   }
