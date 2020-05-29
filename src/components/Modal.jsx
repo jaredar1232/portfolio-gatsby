@@ -56,8 +56,8 @@ const ModalWrapper = styled.div`
     z-index: 100;
 
     @media (max-width: 56.25em) {
-      top: 9rem;
-      right: 2rem;
+      top: 9.6rem;
+      right: 2.2rem;
     }
 
     @media (hover: hover) {
