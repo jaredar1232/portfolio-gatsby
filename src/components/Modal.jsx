@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
+import Icons from "../components/Icons.jsx"
 
 const ModalWrapper = styled.div`
   .hide-modal {
@@ -25,6 +26,10 @@ const ModalWrapper = styled.div`
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: 10px;
+      overflow: auto;
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
 
       @media (max-width: 56.25em) {
         width: 95%;
@@ -53,8 +58,8 @@ const ModalWrapper = styled.div`
       &:hover {
         background-image: linear-gradient(
           to right bottom,
-          rgb(102, 201, 255),
-          rgb(120, 139, 249)
+          rgb(216, 216, 216),
+          rgb(216, 215, 215)
         );
       }
     }
@@ -73,15 +78,15 @@ const ModalWrapper = styled.div`
         rgb(102, 201, 255),
         rgb(120, 139, 249)
       );
-      top: 1.6rem;
-      -webkit-background-clip: text;
     }
-
     &::before {
+      top: 1.5rem;
+      left: 0.2rem;
       transform: rotate(45deg);
     }
-
     &::after {
+      top: 1.5rem;
+      right: 0.2rem;
       transform: rotate(-45deg);
     }
   }
@@ -93,6 +98,7 @@ const ModalWrapper = styled.div`
     text-align: center;
     color: black;
     background-color: transparent;
+    padding-top: 3rem;
 
     @media (max-width: 56.25em) {
       font-size: 2.5rem;
@@ -100,11 +106,28 @@ const ModalWrapper = styled.div`
   }
 
   .description {
-    background-color: orange;
+    font-size: 2rem;
+    font-weight: 400;
+    color: black;
+    padding: 3rem 3rem 5rem 3rem;
   }
 
   .keypoints {
-    background-color: purple;
+    // background-color: purple;
+    font-size: 2rem;
+    font-weight: 400;
+    color: black;
+    list-style-type: none;
+    padding: 0 3rem 5rem 3rem;
+
+    li {
+      padding-top: 1rem;
+    }
+  }
+
+  .icons {
+    text-align: center;
+    padding: 0 2rem;
   }
 `
 
@@ -112,6 +135,7 @@ export default class Modal extends Component {
   render() {
     const modalDetails = this.props.modalDetails
     const showModal = this.props.showModal
+    console.log(modalDetails.icons)
 
     return (
       <ModalWrapper>
@@ -123,15 +147,31 @@ export default class Modal extends Component {
             <h3 className="heading-tertiary">{modalDetails.name}</h3>
             <div className="description">{modalDetails.description}</div>
 
-            {/* <div className="popup__left">{modalDetails.description}</div> */}
-            <div className="keypoints">{modalDetails.keyPoints}</div>
-            <div className="icons">{modalDetails.icons}</div>
+            <ul className="keypoints">
+              {" "}
+              {modalDetails.keyPoints
+                ? modalDetails.keyPoints.map(item => (
+                    <li>&bull;&ensp;{item}</li>
+                  ))
+                : null}
+            </ul>
+            <div className="icons">
+              {modalDetails.icons
+                ? modalDetails.icons.map(anIcon => (
+                    <Icons anIcon={anIcon} key={anIcon} />
+                  ))
+                : null}
+            </div>
           </div>
         </div>
       </ModalWrapper>
     )
   }
 }
+
+// ;<span>
+//   <img src={`../../public/${anIcon}.png`}></img>
+// </span>
 
 // "details": {
 //   "name": "Nike Mock Up",

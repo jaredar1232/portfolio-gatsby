@@ -6,7 +6,7 @@
     "github": "https://github.com/jaredar1232/Nike-Mock-Up",
     "details": {
       "name": "Nike Mock Up",
-      "description": "nike description",
+      "description": "I worked on this application with two other developers. The goal was to push our CSS skills to match that of the best frontline developers employed by the sportswear giant Nike.",
       "keyPoints": [
         "Built a Nike product display page following a micro-service architecture",
         "Randomly generated 5000+ reviews to consistently correlate with 100 real nike products",
@@ -34,7 +34,7 @@
     "github": "https://github.com/jaredar1232/Streak-Activity-Tracker",
     "details": {
       "name": "Streak Tracker",
-      "description": "streak description",
+      "description": "The goal of this application was to work with a small team of two other developers to produce a minimum viable product under a time constraint. My team and I brainstormed, designed, and built out a functioning competative activity tracker in under a week.",
       "keyPoints": [
         "Followed monolithic architecture to produce a seamless codebase and practice code review workflow",
         "Utilized Firebase for authentication, adaptable storage, and session state persistence ",
@@ -58,7 +58,7 @@
     "github": "https://github.com/jaredar1232/System-Design--BestBuy",
     "details": {
       "name": "System Design",
-      "description": "system design description",
+      "description": "I worked alone on another developer's unfamiliar codebase. The goal was to practice optimization between varrying databases and running separate complex system through AWS CLI",
       "keyPoints": [
         "Expanded data set from 100 unique records to 10,000,000 unique records",
         "Reduced database setup time by 80% by using automated CSV generation and batch import (~12 min down to ~2.5 min) ",

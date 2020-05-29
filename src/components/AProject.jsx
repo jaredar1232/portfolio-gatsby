@@ -43,25 +43,6 @@ const AProjectWrapper = styled.div`
     width: 100%;
   }
 
-  // .hide-project-info {
-  //   display: none;
-  //   color: white;
-  // }
-
-  // .project-info-container {
-  //   width: 100%;
-  //   height: 100%;
-  //   text-align: center;
-  //   border: solid 1px white;
-  //   border-radius: 10px;
-  //   background-color: white;
-  //   z-index: 1;
-  //   position: absolute;
-  //   top: 0;
-  //   overflow-x: hidden;
-  //   overflow-x: auto;
-  // }
-
   .btn-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -144,19 +125,6 @@ const AProjectWrapper = styled.div`
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     transform: translateY(0);
   }
-
-  // .details-bullet {
-  //   font-size: 2.5rem;
-  //   color: black;
-  //   display: list-item;
-  //   list-style-type: disc;
-  //   list-style-position: inside;
-  //   margin: 2rem;
-  //   text-align: left;
-  //   @media (max-width: 56.25em) {
-  //     font-size: 1.6rem;
-  //   }
-  // }
 `
 
 export default class AProject extends Component {
