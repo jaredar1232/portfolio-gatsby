@@ -73,7 +73,8 @@
         "Node.js",
         "Jest",
         "AWS",
-        "NGINX"
+        "NGINX",
+        "Faker.js"
       ]
     }
   }
