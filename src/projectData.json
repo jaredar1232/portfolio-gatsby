@@ -5,6 +5,7 @@
     "video": "https://jaredsportfolio.s3-us-west-1.amazonaws.com/Nike.mp4",
     "github": "https://github.com/jaredar1232/Nike-Mock-Up",
     "details": {
+      "name": "Nike Mock Up",
       "description": "nike description",
       "keyPoints": [
         "Built a Nike product display page following a micro-service architecture",
@@ -32,6 +33,7 @@
     "video": "https://jaredsportfolio.s3-us-west-1.amazonaws.com/Streak.mp4",
     "github": "https://github.com/jaredar1232/Streak-Activity-Tracker",
     "details": {
+      "name": "Streak Tracker",
       "description": "streak description",
       "keyPoints": [
         "Followed monolithic architecture to produce a seamless codebase and practice code review workflow",
@@ -55,6 +57,7 @@
     "video": "https://jaredsportfolio.s3-us-west-1.amazonaws.com/SystemDesign.mp4",
     "github": "https://github.com/jaredar1232/System-Design--BestBuy",
     "details": {
+      "name": "System Design",
       "description": "system design description",
       "keyPoints": [
         "Expanded data set from 100 unique records to 10,000,000 unique records",

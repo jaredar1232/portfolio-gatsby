@@ -78,7 +78,6 @@ const ResumeWrapper = styled.div`
         -webkit-background-clip: unset;
         color: white;
         text-decoration: none;
-        -webkit-background-clip: unset;
         color: white;
         box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4);
         transform: translateY(-2px);
