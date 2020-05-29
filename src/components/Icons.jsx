@@ -3,12 +3,12 @@ import styled from "styled-components"
 
 const IconsWrapper = styled.div`
   display: inline-block;
-  margin: 1rem 2rem;
+  margin: 1.6rem 1.6rem;
   text-align: center;
 
   .icon-container {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     overflow: hidden;
     border-radius: 5px;
     margin: 0 auto;
@@ -21,7 +21,7 @@ const IconsWrapper = styled.div`
 
   .icon-label {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: black;
   }
 `
