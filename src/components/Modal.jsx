@@ -46,13 +46,19 @@ const ModalWrapper = styled.div`
     width: 3.6rem;
     background-color: transparent;
     position: fixed;
-    top: 5px;
-    right: 5px;
+    top: 5rem;
+    right: 5rem;
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
     margin: 0 auto;
     cursor: pointer;
+    z-index: 100;
+
+    @media (max-width: 56.25em) {
+      top: 9rem;
+      right: 2rem;
+    }
 
     @media (hover: hover) {
       &:hover {
@@ -135,15 +141,14 @@ export default class Modal extends Component {
   render() {
     const modalDetails = this.props.modalDetails
     const showModal = this.props.showModal
-    console.log(modalDetails.icons)
 
     return (
       <ModalWrapper>
         <div className={showModal ? "popup" : "hide-modal"}>
+          <div className="exit" onClick={() => this.props.closeModal()}>
+            <span className="exit__icon">&nbsp;</span>
+          </div>
           <div className="popup__content">
-            <div className="exit" onClick={() => this.props.closeModal()}>
-              <span className="exit__icon">&nbsp;</span>
-            </div>
             <h3 className="heading-tertiary">{modalDetails.name}</h3>
             <div className="description">{modalDetails.description}</div>
 
@@ -151,7 +156,7 @@ export default class Modal extends Component {
               {" "}
               {modalDetails.keyPoints
                 ? modalDetails.keyPoints.map(item => (
-                    <li>&bull;&ensp;{item}</li>
+                    <li key={item.index}>&bull;&ensp;{item}</li>
                   ))
                 : null}
             </ul>
