@@ -119,7 +119,6 @@ const ModalWrapper = styled.div`
   }
 
   .keypoints {
-    // background-color: purple;
     font-size: 2rem;
     font-weight: 400;
     color: black;

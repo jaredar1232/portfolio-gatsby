@@ -36,7 +36,7 @@ const ResumeWrapper = styled.div`
   // }
 
   .resume-button-container {
-    width: 20%;
+    width: 27%;
     height: auto;
     margin: 0 auto;
     background-color: white;
@@ -49,7 +49,8 @@ const ResumeWrapper = styled.div`
     }
 
     @media (max-width: 56.25em) {
-      width: 80%;
+      // margin-top: 10rem;
+      width: 30rem;
     }
   }
 
