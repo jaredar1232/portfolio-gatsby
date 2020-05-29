@@ -58,7 +58,7 @@
     "github": "https://github.com/jaredar1232/System-Design--BestBuy",
     "details": {
       "name": "System Design",
-      "description": "I worked alone on another developer's unfamiliar codebase. The goal was to practice optimization between varrying databases and running separate complex system through AWS CLI",
+      "description": "I worked alone on another developer's unfamiliar codebase. The goal was to practice optimization between varrying databases and running separate complex system through AWS services.",
       "keyPoints": [
         "Expanded data set from 100 unique records to 10,000,000 unique records",
         "Reduced database setup time by 80% by using automated CSV generation and batch import (~12 min down to ~2.5 min) ",
@@ -72,7 +72,8 @@
         "React",
         "Node.js",
         "Jest",
-        "AWS"
+        "AWS",
+        "NGINX"
       ]
     }
   }
