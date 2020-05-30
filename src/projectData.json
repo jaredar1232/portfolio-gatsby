@@ -6,7 +6,7 @@
     "github": "https://github.com/jaredar1232/Nike-Mock-Up",
     "details": {
       "name": "Nike Mock Up",
-      "description": "push my CSS skills to match that of the best frontline developers employed by the sportswear giant Nike.",
+      "description": "push my CSS skills to match that of the best frontline developers employed by the sportswear giant Nike",
       "keyPoints": [
         "Constructed a Nike product display page and followed a micro-service architecture to keep concerns separate and modular",
         "Generated 5000+ random reviews for 100 real nike products with data persistence in order to simulate a realistic user experience",
@@ -34,7 +34,7 @@
     "github": "https://github.com/jaredar1232/Streak-Activity-Tracker",
     "details": {
       "name": "Streak Tracker",
-      "description": "produce a minimum viable product under a time constraint. My team and I brainstormed, designed, and built out a functioning competative activity tracker in under a week using tech we had never worked with before.",
+      "description": "produce a minimum viable product under a time constraint. My team and I brainstormed, designed, and built out a functioning competative activity tracker in under a week using tech we had never worked with before",
       "keyPoints": [
         "Implemented a monolithic architecture with git feature branch workflow to produce a more uniform codebase",
         "Utilized Firebase for authentication, adaptable storage, and session state persistence to maintain full features while under time constraints",
@@ -58,7 +58,7 @@
     "github": "https://github.com/jaredar1232/System-Design--BestBuy",
     "details": {
       "name": "System Design",
-      "description": "working on another developer's unfamiliar codebase, optimize locally between varrying databases and live once deployed on AWS services.",
+      "description": "working on another developer's unfamiliar codebase, optimize locally between varrying databases and live once deployed on AWS services",
       "keyPoints": [
         "Expanded data set from 100 unique records to 10,000,000 unique records",
         "Reduced database migration time by 80% by using automated CSV generation and batch import (~12 min down to ~2.5 min)",
