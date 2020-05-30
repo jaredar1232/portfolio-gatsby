@@ -133,10 +133,10 @@ export default class AboutMe extends Component {
                 <p className="paragraph">
                   Hello and welcome to my portfolio! After graduating with a
                   STEM background from the University of California Santa
-                  Barbara, I found my true passion in coding. After learning the
-                  ropes on my own I decided to attend one of the top software
-                  engineering immersives in the world and further refine my
-                  abilities.
+                  Barbara, I found my true passion in coding. I learned the
+                  ropes and drilled the fundamentals on my own before deciding
+                  to attend one of the top software engineering immersives in
+                  the world and further refine my abilities.
                   <br />
                   <br />I enjoy building beautiful software; intuitive for
                   clients to interact with and refreshing for developers to
