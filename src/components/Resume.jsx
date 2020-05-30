@@ -106,7 +106,7 @@ export default class Resume extends Component {
         <section className="section-resume">
           <div className="resume-button-container">
             <a
-              href="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Resume.pdf"
+              href="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Jared+Rothenberg's+Resume.pdf"
               target="_blank"
               className="resume-button"
               rel="noreferrer"

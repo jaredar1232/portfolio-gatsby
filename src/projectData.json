@@ -6,12 +6,12 @@
     "github": "https://github.com/jaredar1232/Nike-Mock-Up",
     "details": {
       "name": "Nike Mock Up",
-      "description": "I worked on this application with two other developers. The goal was to push our CSS skills to match that of the best frontline developers employed by the sportswear giant Nike.",
+      "description": "Goal: push my CSS skills to match that of the best frontline developers employed by the sportswear giant Nike.",
       "keyPoints": [
-        "Built a Nike product display page following a micro-service architecture",
-        "Randomly generated 5000+ reviews to consistently correlate with 100 real nike products",
-        "Implemented CRUD operations & sort functionality by querying a Mongo database with nested subdocuments ",
-        "Rendered a single page comprised of 3 services (nav, viewer, reviews) that communicate via url and proxy server "
+        "Constructed a Nike product display page and followed a micro-service architecture to keep concerns separate and modular",
+        "Generated 5000+ random reviews for 100 real nike products with data persistence in order to simulate a realistic user experience",
+        "Queried a Mongo database with nested subdocuments by implementing CRUD operations and a custom API to give the user appropriate information",
+        "Rendered a single page comprised of 3 micro-services that communicate via url change and proxy server"
       ],
       "icons": [
         "MongoDB",
@@ -34,11 +34,11 @@
     "github": "https://github.com/jaredar1232/Streak-Activity-Tracker",
     "details": {
       "name": "Streak Tracker",
-      "description": "The goal of this application was to work with a small team of two other developers to produce a minimum viable product under a time constraint. My team and I brainstormed, designed, and built out a functioning competative activity tracker in under a week.",
+      "description": "Goal: produce a minimum viable product under a time constraint. My team and I brainstormed, designed, and built out a functioning competative activity tracker in under a week using tech we had never worked with before.",
       "keyPoints": [
-        "Followed monolithic architecture to produce a seamless codebase and practice code review workflow",
-        "Utilized Firebase for authentication, adaptable storage, and session state persistence ",
-        "Created a habit tracking app from the ground up with a mobile first emphasis"
+        "Implemented a monolithic architecture with git feature branch workflow to produce a more uniform codebase",
+        "Utilized Firebase for authentication, adaptable storage, and session state persistence to maintain full features while under time constraints",
+        "Practiced mobile first emphasis to ensure the final application didn’t sacrifice key features when displayed on mobile"
       ],
       "icons": [
         "Firebase",
@@ -58,12 +58,12 @@
     "github": "https://github.com/jaredar1232/System-Design--BestBuy",
     "details": {
       "name": "System Design",
-      "description": "I worked alone on another developer's unfamiliar codebase. The goal was to practice optimization between varrying databases and running separate complex system through AWS services.",
+      "description": "Goal: working on another developer's unfamiliar codebase, optimize locally between varrying databases and live once deployed on AWS services.",
       "keyPoints": [
         "Expanded data set from 100 unique records to 10,000,000 unique records",
-        "Reduced database setup time by 80% by using automated CSV generation and batch import (~12 min down to ~2.5 min) ",
-        "Optimized query times between Mongoose ODM, MongoDB, and PostgreSQL; used indexing to reduce queries to an average of under 0.1 ms per request ",
-        "Deployed separate database and server; optimized 1 EC2 instance to 2000 rps, 0% error rate, and 126ms average response time and 3 nginx load balanced EC2 instances to 3000 rps, 0% error rate, and 63ms response time"
+        "Reduced database migration time by 80% by using automated CSV generation and batch import (~12 min down to ~2.5 min)",
+        "Optimized query times between Mongoose ODM, MongoDB, and PostgreSQL and by indexing to reduce queries to an average of under 0.1ms per request",
+        "Deployed independent database and servers; scaled from 1 EC2 instance with 2000 rps, 0% error rate, and 126ms latency up to 3 NGINX load balanced EC2 instance servers with 3000 rps, 0% error rate, and 63ms latency"
       ],
       "icons": [
         "MongoDB",
