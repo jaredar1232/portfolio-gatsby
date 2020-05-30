@@ -4,13 +4,13 @@ import styled from "styled-components"
 const AboutMeWrapper = styled.div`
   .section-about {
     background-color: #181e2e;
-    padding: 40rem 0 100rem 0;
+    padding: 30rem 0 125rem 0;
     color: white;
     margin-top: -20vh;
     z-index: 7;
 
     @media (max-width: 56.25em) {
-      padding: 20rem 0 85rem 0;
+      padding: 20rem 0 110rem 0;
     }
   }
 
@@ -131,13 +131,20 @@ export default class AboutMe extends Component {
               <div className="col-1-of-2 writing">
                 <h3 className="heading-tertiary"></h3>
                 <p className="paragraph">
-                  Hello and welcome to my portfolio! I enjoy building beautiful
-                  software; intuitive for clients to interact with and
-                  refreshing for developers to read. I have experience solving
-                  problems with a wide variety of technologies and love adding
-                  to my tool kit. I'm really interested in tech, medicine,
-                  health & fitness, and finance because I enjoy pushing personal
-                  and societal growth.
+                  Hello and welcome to my portfolio! After graduating with a
+                  double major and STEM background from the University of
+                  California Santa Barbara, I found my true passion in coding.
+                  After learning the ropes on my own I decided to attend one of
+                  the top software engineering immersives in the world and
+                  further refine my abilities.
+                  <br />
+                  <br />I enjoy building beautiful software; intuitive for
+                  clients to interact with and refreshing for developers to
+                  read. I have experience solving problems with a wide variety
+                  of technologies and love adding to my tool kit. I'm really
+                  interested in tech, medicine, health & fitness, and finance
+                  because these are all fields which push personal and societal
+                  growth.
                 </p>
               </div>
               <div className="col-1-of-2">
