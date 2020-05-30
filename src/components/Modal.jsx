@@ -151,7 +151,10 @@ export default class Modal extends Component {
           </div>
           <div className="popup__content">
             <h3 className="heading-tertiary">{modalDetails.name}</h3>
-            <div className="description">{modalDetails.description}</div>
+            <div className="description">
+              <b>The Goal:</b>
+              {modalDetails.description}
+            </div>
 
             <ul className="keypoints">
               {" "}

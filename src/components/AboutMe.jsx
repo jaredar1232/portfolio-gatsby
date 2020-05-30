@@ -131,12 +131,11 @@ export default class AboutMe extends Component {
               <div className="col-1-of-2 writing">
                 <h3 className="heading-tertiary"></h3>
                 <p className="paragraph">
-                  Hello and welcome to my portfolio! After graduating with a
-                  double major and STEM background from the University of
-                  California Santa Barbara, I found my true passion in coding.
-                  After learning the ropes on my own I decided to attend one of
-                  the top software engineering immersives in the world and
-                  further refine my abilities.
+                  Hello and welcome to my portfolio! After graduating with STEM
+                  background from the University of California Santa Barbara, I
+                  found my true passion in coding. After learning the ropes on
+                  my own I decided to attend one of the top software engineering
+                  immersives in the world and further refine my abilities.
                   <br />
                   <br />I enjoy building beautiful software; intuitive for
                   clients to interact with and refreshing for developers to
