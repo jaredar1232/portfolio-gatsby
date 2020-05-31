@@ -15,6 +15,13 @@ const AProjectWrapper = styled.div`
     @media (max-width: 56.25em) {
       width: 95%;
     }
+
+    // @media (min-width: 56.25em) {
+    //   --data-sal: zoom-in;
+    //   --sal-delay: 0;
+    //   --sal-easing: ease;
+    //   --sal-duration: 500;
+    // }
   }
 
   .heading-tertiary {
@@ -134,13 +141,7 @@ export default class AProject extends Component {
 
     return (
       <AProjectWrapper projectWidth={projectWidth}>
-        <div
-          className="project-container"
-          data-sal="zoom-in"
-          data-sal-delay="0"
-          data-sal-easing="ease"
-          data-sal-duration="500"
-        >
+        <div className="project-container">
           <h3 className="heading-tertiary">{aProject.name}</h3>
           <div className="image-container">
             <video
