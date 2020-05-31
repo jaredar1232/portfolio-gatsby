@@ -19,7 +19,7 @@ const IndexPage = () => (
       />
       <link
         rel="shortcut icon"
-        href="https://jared-rothenbergs-portfolio.s3-us-west-1.amazonaws.com/logo.png"
+        href="https://jared-rothenbergs-portfolio.s3-us-west-1.amazonaws.com/logoCropped.png"
       />
       <link
         rel="stylesheet"
