@@ -112,7 +112,7 @@ export default class Resume extends Component {
             data-sal-duration="500"
           >
             <a
-              href="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Jared+Rothenberg's+Resume.pdf"
+              href="https://jared-rothenbergs-portfolio.s3-us-west-1.amazonaws.com/Jared+Rothenberg's+Resume.pdf"
               target="_blank"
               className="resume-button"
               rel="noreferrer"
