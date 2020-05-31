@@ -173,6 +173,10 @@ export default class Contact extends Component {
                   value={this.state.value}
                   onChange={this.handleInputChange}
                   className="form-text"
+                  data-sal="slide-right"
+                  data-sal-delay="300"
+                  data-sal-easing="ease"
+                  data-sal-duration="500"
                 />
               </label>
               <label>
@@ -183,6 +187,10 @@ export default class Contact extends Component {
                   value={this.state.value}
                   onChange={this.handleInputChange}
                   className="form-text"
+                  data-sal="slide-right"
+                  data-sal-delay="300"
+                  data-sal-easing="ease"
+                  data-sal-duration="500"
                 />
               </label>
               <label>
@@ -193,6 +201,10 @@ export default class Contact extends Component {
                   value={this.state.value}
                   onChange={this.handleInputChange}
                   className="form-text"
+                  data-sal="slide-right"
+                  data-sal-delay="300"
+                  data-sal-easing="ease"
+                  data-sal-duration="500"
                 />
               </label>
               <label>
@@ -203,6 +215,10 @@ export default class Contact extends Component {
                   value={this.state.value}
                   onChange={this.handleInputChange}
                   className="form-text form-textarea"
+                  data-sal="slide-right"
+                  data-sal-delay="200"
+                  data-sal-easing="ease"
+                  data-sal-duration="500"
                 />
               </label>
               <div className="center-submit">

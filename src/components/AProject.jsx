@@ -134,7 +134,13 @@ export default class AProject extends Component {
 
     return (
       <AProjectWrapper projectWidth={projectWidth}>
-        <div className="project-container">
+        <div
+          className="project-container"
+          data-sal="zoom-in"
+          data-sal-delay="0"
+          data-sal-easing="ease"
+          data-sal-duration="500"
+        >
           <h3 className="heading-tertiary">{aProject.name}</h3>
           <div className="image-container">
             <video
