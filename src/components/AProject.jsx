@@ -143,13 +143,7 @@ export default class AProject extends Component {
       <AProjectWrapper projectWidth={projectWidth}>
         <div className="project-container">
           <h3 className="heading-tertiary">{aProject.name}</h3>
-          <div
-            className="image-container"
-            data-sal="zoom-in"
-            data-sal-delay="300"
-            data-sal-easing="ease"
-            data-sal-duration="500"
-          >
+          <div className="image-container">
             <video
               width="100%"
               height="auto"
