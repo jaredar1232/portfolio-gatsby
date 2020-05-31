@@ -150,7 +150,7 @@ export default class AboutMe extends Component {
               <div className="col-1-of-2">
                 <div className="composition">
                   <img
-                    src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Headshot.JPG"
+                    src="https://jared-rothenbergs-portfolio.s3-us-west-1.amazonaws.com/Headshot.JPG"
                     alt="Photo 1"
                     className="composition__photo"
                   />

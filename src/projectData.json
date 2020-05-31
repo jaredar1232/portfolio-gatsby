@@ -2,7 +2,7 @@
   {
     "name": "Nike Mock Up",
     "width": 85,
-    "video": "https://jaredsportfolio.s3-us-west-1.amazonaws.com/Nike.mp4",
+    "video": "https://jared-rothenbergs-portfolio.s3-us-west-1.amazonaws.com/Nike.mp4",
     "github": "https://github.com/jaredar1232/Nike-Mock-Up",
     "details": {
       "name": "Nike Mock Up",
@@ -30,7 +30,7 @@
   {
     "name": "Streak Tracker",
     "width": 35,
-    "video": "https://jaredsportfolio.s3-us-west-1.amazonaws.com/Streak.mp4",
+    "video": "https://jared-rothenbergs-portfolio.s3-us-west-1.amazonaws.com/Streak.mp4",
     "github": "https://github.com/jaredar1232/Streak-Activity-Tracker",
     "details": {
       "name": "Streak Tracker",
@@ -54,7 +54,7 @@
   {
     "name": "System Design",
     "width": 85,
-    "video": "https://jaredsportfolio.s3-us-west-1.amazonaws.com/SystemDesign.mp4",
+    "video": "https://jared-rothenbergs-portfolio.s3-us-west-1.amazonaws.com/SystemDesign.mp4",
     "github": "https://github.com/jaredar1232/System-Design--BestBuy",
     "details": {
       "name": "System Design",
