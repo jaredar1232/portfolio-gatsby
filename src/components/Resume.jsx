@@ -106,10 +106,10 @@ export default class Resume extends Component {
         <section className="section-resume">
           <div
             className="resume-button-container"
-            data-sal="zoom-in"
-            data-sal-delay="100"
-            data-sal-easing="ease"
-            data-sal-duration="500"
+            // data-sal="zoom-in"
+            // data-sal-delay="100"
+            // data-sal-easing="ease"
+            // data-sal-duration="500"
           >
             <a
               href="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Jared+Rothenberg's+Resume.pdf"
