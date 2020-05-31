@@ -85,14 +85,26 @@ export default class Footer extends Component {
     return (
       <FooterWrapper>
         <section className="section-footer">
-          <div className="icon-container">
+          <div
+            className="icon-container"
+            data-sal="zoom-in"
+            data-sal-delay="500"
+            data-sal-easing="ease"
+            data-sal-duration="500"
+          >
             <a
               href="https://www.linkedin.com/in/jared-rothenberg"
               className="footer-icon"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa fa-linkedin"></i>
+              <i
+                className="fa fa-linkedin"
+                data-sal="zoom-in"
+                data-sal-delay="1000"
+                data-sal-easing="ease"
+                data-sal-duration="1000"
+              ></i>
             </a>
 
             <a
@@ -101,10 +113,22 @@ export default class Footer extends Component {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa fa-github"></i>
+              <i
+                className="fa fa-github"
+                data-sal="zoom-in"
+                data-sal-delay="1000"
+                data-sal-easing="ease"
+                data-sal-duration="1000"
+              ></i>
             </a>
             <a href="mailto:jaredar@gmail.com" className="footer-icon">
-              <i className="fa fa-envelope"></i>
+              <i
+                className="fa fa-envelope"
+                data-sal="zoom-in"
+                data-sal-delay="1000"
+                data-sal-easing="ease"
+                data-sal-duration="1000"
+              ></i>
             </a>
           </div>
 
