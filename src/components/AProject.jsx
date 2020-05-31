@@ -143,7 +143,13 @@ export default class AProject extends Component {
       <AProjectWrapper projectWidth={projectWidth}>
         <div className="project-container">
           <h3 className="heading-tertiary">{aProject.name}</h3>
-          <div className="image-container">
+          <div
+            className="image-container"
+            data-sal="zoom-in"
+            data-sal-delay="300"
+            data-sal-easing="ease"
+            data-sal-duration="500"
+          >
             <video
               width="100%"
               height="auto"
@@ -159,7 +165,13 @@ export default class AProject extends Component {
             </video>
           </div>
           <div className="btn-container">
-            <div className="btn-position">
+            <div
+              className="btn-position"
+              data-sal="slide-right"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+              data-sal-duration="500"
+            >
               <a
                 href={aProject.github}
                 className="btn-text"
@@ -178,7 +190,13 @@ export default class AProject extends Component {
                 &nbsp; Github
               </a>
             </div>
-            <div className="btn-position">
+            <div
+              className="btn-position"
+              data-sal="slide-left"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+              data-sal-duration="500"
+            >
               <div
                 className="btn--2"
                 onClick={() => this.props.modalOnClick(aProject.details)}
