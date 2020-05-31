@@ -216,7 +216,7 @@ export default class Contact extends Component {
                   onChange={this.handleInputChange}
                   className="form-text form-textarea"
                   data-sal="slide-right"
-                  data-sal-delay="200"
+                  data-sal-delay="300"
                   data-sal-easing="ease"
                   data-sal-duration="500"
                 />
