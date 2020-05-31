@@ -159,13 +159,7 @@ export default class AProject extends Component {
             </video>
           </div>
           <div className="btn-container">
-            <div
-              className="btn-position"
-              data-sal="slide-right"
-              data-sal-delay="300"
-              data-sal-easing="ease"
-              data-sal-duration="500"
-            >
+            <div className="btn-position">
               <a
                 href={aProject.github}
                 className="btn-text"
@@ -184,13 +178,7 @@ export default class AProject extends Component {
                 &nbsp; Github
               </a>
             </div>
-            <div
-              className="btn-position"
-              data-sal="slide-left"
-              data-sal-delay="300"
-              data-sal-easing="ease"
-              data-sal-duration="500"
-            >
+            <div className="btn-position">
               <div
                 className="btn--2"
                 onClick={() => this.props.modalOnClick(aProject.details)}
