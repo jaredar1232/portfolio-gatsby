@@ -88,7 +88,7 @@ export default class Footer extends Component {
           <div
             className="icon-container"
             data-sal="zoom-in"
-            data-sal-delay="500"
+            data-sal-delay="0"
             data-sal-easing="ease"
             data-sal-duration="500"
           >
@@ -101,7 +101,7 @@ export default class Footer extends Component {
               <i
                 className="fa fa-linkedin"
                 data-sal="zoom-in"
-                data-sal-delay="1000"
+                data-sal-delay="500"
                 data-sal-easing="ease"
                 data-sal-duration="1000"
               ></i>
@@ -116,7 +116,7 @@ export default class Footer extends Component {
               <i
                 className="fa fa-github"
                 data-sal="zoom-in"
-                data-sal-delay="1000"
+                data-sal-delay="500"
                 data-sal-easing="ease"
                 data-sal-duration="1000"
               ></i>
@@ -125,7 +125,7 @@ export default class Footer extends Component {
               <i
                 className="fa fa-envelope"
                 data-sal="zoom-in"
-                data-sal-delay="1000"
+                data-sal-delay="500"
                 data-sal-easing="ease"
                 data-sal-duration="1000"
               ></i>
