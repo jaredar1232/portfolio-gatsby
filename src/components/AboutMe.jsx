@@ -105,6 +105,10 @@ const AboutMeWrapper = styled.div`
       top: 4rem;
 
       @media (max-width: 56.25em) {
+        margin-top: 2rem;
+      }
+
+      @media (max-width: 56.25em) {
         left: 0;
         right: 0;
         margin-left: auto;
@@ -129,8 +133,13 @@ export default class AboutMe extends Component {
             </div>
             <div className="row">
               <div className="col-1-of-2 writing">
-                <h3 className="heading-tertiary"></h3>
-                <p className="paragraph">
+                <p
+                  className="paragraph"
+                  data-sal="slide-left"
+                  data-sal-delay="300"
+                  data-sal-easing="ease"
+                  data-sal-duration="1000"
+                >
                   Hello and welcome to my portfolio! After graduating with a
                   STEM background from the University of California Santa
                   Barbara, I found my true passion in coding. I learned the
@@ -148,7 +157,13 @@ export default class AboutMe extends Component {
                 </p>
               </div>
               <div className="col-1-of-2">
-                <div className="composition">
+                <div
+                  className="composition"
+                  data-sal="zoom-in"
+                  data-sal-delay="400"
+                  data-sal-easing="ease"
+                  data-sal-duration="1000"
+                >
                   <img
                     src="https://jared-rothenbergs-portfolio.s3-us-west-1.amazonaws.com/Headshot.JPG"
                     alt="Photo 1"
