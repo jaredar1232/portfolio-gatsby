@@ -9,7 +9,7 @@ const TopFoldWrapper = styled.div`
         rgba(14, 17, 25, 0.899),
         rgba(21, 26, 40, 0.194)
       ),
-      url(/LandingImageBlueMedium.jpg);
+      url(https://d1o11p1jeyf1dw.cloudfront.net/LandingImageBlueMedium.jpg);
     background-size: cover;
     background-position: right;
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 99%);

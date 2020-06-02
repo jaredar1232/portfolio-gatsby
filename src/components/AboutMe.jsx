@@ -165,7 +165,7 @@ export default class AboutMe extends Component {
                   data-sal-duration="1000"
                 >
                   <img
-                    src="https://jared-rothenbergs-portfolio.s3-us-west-1.amazonaws.com/Headshot.JPG"
+                    src="https://d1o11p1jeyf1dw.cloudfront.net/Headshot.JPG"
                     alt="Photo 1"
                     className="composition__photo"
                   />
