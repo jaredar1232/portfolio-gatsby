@@ -152,6 +152,7 @@ export default class AProject extends Component {
               loop
               paused={`${!this.props.showModal}`}
               autoPlay
+              preload="none"
               className="project"
             >
               <source src={aProject.video} type="video/mp4"></source>
