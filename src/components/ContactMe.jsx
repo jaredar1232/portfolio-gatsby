@@ -126,7 +126,7 @@ export default class Contact extends Component {
   }
 
   handleSubmit(event) {
-    alert("Message submitted")
+    alert("Message Submitted!")
     event.preventDefault()
 
     axios
@@ -151,6 +151,12 @@ export default class Contact extends Component {
       .catch(function (error) {
         console.log(error)
       })
+    this.setState({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    })
   }
 
   render() {
@@ -170,9 +176,10 @@ export default class Contact extends Component {
                 <input
                   type="text"
                   name="name"
-                  value={this.state.value}
+                  value={this.state.name}
                   onChange={this.handleInputChange}
                   className="form-text"
+                  id="name"
                   data-sal="slide-right"
                   data-sal-delay="300"
                   data-sal-easing="ease"
@@ -184,7 +191,7 @@ export default class Contact extends Component {
                 <input
                   type="text"
                   name="email"
-                  value={this.state.value}
+                  value={this.state.email}
                   onChange={this.handleInputChange}
                   className="form-text"
                   data-sal="slide-right"
@@ -198,7 +205,7 @@ export default class Contact extends Component {
                 <input
                   type="text"
                   name="subject"
-                  value={this.state.value}
+                  value={this.state.subject}
                   onChange={this.handleInputChange}
                   className="form-text"
                   data-sal="slide-right"
@@ -212,7 +219,7 @@ export default class Contact extends Component {
                 <textarea
                   type="text"
                   name="message"
-                  value={this.state.value}
+                  value={this.state.message}
                   onChange={this.handleInputChange}
                   className="form-text form-textarea"
                   data-sal="slide-right"
