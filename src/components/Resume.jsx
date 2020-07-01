@@ -106,13 +106,6 @@ export default class Resume extends Component {
               &nbsp; View Resume
             </a>
           </div>
-          {/* <div className="iframe-container" id="resume">
-            <iframe
-              src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Resume.pdf"
-              className="iframe"
-              type="application/pdf"
-            ></iframe>
-          </div> */}
         </section>
       </ResumeWrapper>
     )
