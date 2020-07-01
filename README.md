@@ -1,7 +1,7 @@
 # Personal Portfolio
 
 
->  responseive personal portfolio
+>  responsive personal portfolio
 
 
 ## Table of Contents
