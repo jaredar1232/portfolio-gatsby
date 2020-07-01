@@ -12,29 +12,6 @@ const ResumeWrapper = styled.div`
     }
   }
 
-  // .iframe-container {
-  //   overflow: hidden;
-  //   padding-top: 67%;
-  //   position: relative;
-  //   width: 50%;
-  //   height: 100%;
-  //   margin: auto;
-
-  //   @media (max-width: 56.25em) {
-  //     width: 80%;
-  //     padding-top: 115%;
-  //   }
-  // }
-
-  // .iframe {
-  //   border: none;
-  //   left: 0;
-  //   position: absolute;
-  //   top: 0;
-  //   width: 100%;
-  //   height: 100%;
-  // }
-
   .resume-button-container {
     width: 27%;
     height: auto;
@@ -112,7 +89,7 @@ export default class Resume extends Component {
             data-sal-duration="500"
           >
             <a
-              href="https://d1o11p1jeyf1dw.cloudfront.net/JaredsResume.pdf"
+              href="https://d1o11p1jeyf1dw.cloudfront.net/JaredResume.pdf"
               target="_blank"
               className="resume-button"
               rel="noreferrer"
@@ -129,13 +106,6 @@ export default class Resume extends Component {
               &nbsp; View Resume
             </a>
           </div>
-          {/* <div className="iframe-container" id="resume">
-            <iframe
-              src="https://jaredsportfolio.s3-us-west-1.amazonaws.com/Resume.pdf"
-              className="iframe"
-              type="application/pdf"
-            ></iframe>
-          </div> */}
         </section>
       </ResumeWrapper>
     )
