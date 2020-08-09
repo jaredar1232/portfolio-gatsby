@@ -150,7 +150,9 @@ export default class Modal extends Component {
             <span className="exit__icon">&nbsp;</span>
           </div>
           <div className="popup__content">
-            <h3 className="heading-tertiary">{modalDetails.name}</h3>
+            <h3 className="heading-tertiary" id="modal-top">
+              {modalDetails.name}
+            </h3>
             <div className="description">
               <b>The Goal:&ensp;</b>
               {modalDetails.description}
