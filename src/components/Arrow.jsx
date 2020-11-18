@@ -16,7 +16,7 @@ const ArrowWrapper = styled.div`
     position: absolute;
     left: calc(50% - 3rem);
     bottom: 10%;
-    z-index: 999;
+    z-index: 99;
   }
   /* set arrow styles */
   .arrow path {
