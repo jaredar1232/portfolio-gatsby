@@ -9,7 +9,6 @@ const IconsWrapper = styled.div`
   .icon-container {
     width: 5rem;
     height: 5rem;
-    overflow: hidden;
     border-radius: 5px;
     margin: 0 auto;
   }
