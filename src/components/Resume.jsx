@@ -80,7 +80,7 @@ export default class Resume extends Component {
   render() {
     return (
       <ResumeWrapper>
-        <section className="section-resume">
+        <section className="section-resume" id="resume">
           <div
             className="resume-button-container"
             data-sal="zoom-in"
