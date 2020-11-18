@@ -1,4 +1,30 @@
 [
+    {
+    "name": "The Compendium",
+    "width": 85,
+    "video": "https://d1o11p1jeyf1dw.cloudfront.net/TheCompendium.mp4",
+    "github": "https://github.com/jaredar1232/contact-book",
+    "details": {
+      "name": "The Compendium",
+      "description": "build a full stack contact storage application while learning Typescript and React Hooks.",
+      "keyPoints": [
+        "Programmed in Typescript to prevent runtime errors",
+        "Class objects written using React Hooks to improve code legibility",
+        "Designed a custom API with seperated query routes in order to allow for easier scaling in the future"
+      ],
+      "icons": [
+        "Typescript",
+        "PostgreSQL",
+        "Express.js",
+        "React",
+        "Node.js",
+        "Heroku",
+        "Javascript",
+        "HTML5",
+        "CSS3"
+      ]
+    }
+  },
   {
     "name": "Streak Tracker",
     "width": 35,
@@ -18,6 +44,7 @@
         "Node.js",
         "Chakra",
         "styled-components",
+        "Javascript",
         "HTML5",
         "CSS3"
       ]
@@ -38,6 +65,7 @@
         "Deployed independent database and servers; scaled from 1 EC2 instance with 2000 rps, 0% error rate, and 126ms latency up to 3 NGINX load balanced EC2 instance servers with 3000 rps, 0% error rate, and 63ms latency"
       ],
       "icons": [
+        "Javascript",
         "MongoDB",
         "PostgreSQL",
         "Express.js",
@@ -73,6 +101,7 @@
         "Faker.js",
         "styled-components",
         "http-proxy",
+        "Javascript",
         "HTML5",
         "CSS3"
       ]
