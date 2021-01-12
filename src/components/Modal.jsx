@@ -2,10 +2,10 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import Icons from "../components/Icons.jsx"
 
-// .hide-modal and .popup are used for placement of modal content
-// .modal-overlay-shown and .modal-overlay-hidden are used for closing modal functionality
+// .hide-modal and .overlay are used for placement of modal content
+// .modal-functionality-shown and .modal-functionality-hidden are used for closing modal functionality
 const ModalWrapper = styled.div`
-  @keyframes modalSlide {
+  @keyframes overlayEffect {
     from {
       opacity: 0;
     }
@@ -15,11 +15,21 @@ const ModalWrapper = styled.div`
     }
   }
 
+  @keyframes modalEffect {
+    from {
+      transform: scale(0);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
   .hide-modal {
     display: none;
   }
 
-  .popup {
+  .overlay {
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -27,6 +37,10 @@ const ModalWrapper = styled.div`
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
+    animation: overlayEffect 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &__content {
       max-width: 130rem;
@@ -34,13 +48,10 @@ const ModalWrapper = styled.div`
       height: 60%;
       background-color: white;
       box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      position: relative;
       border-radius: 10px;
       overflow: auto;
-      animation: modalSlide 0.5s;
+      animation: modalEffect 0.6s;
 
       ::-webkit-scrollbar {
         width: 0px;
@@ -49,7 +60,6 @@ const ModalWrapper = styled.div`
       @media (max-width: 56.25em) {
         width: 95%;
         height: 75%;
-        top: 45%;
       }
     }
     @media (max-width: 56.25em) {
@@ -57,8 +67,8 @@ const ModalWrapper = styled.div`
     }
   }
 
-  .modal-overlay-shown {
-    position: fixed;
+  .modal-functionality-shown {
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -68,7 +78,7 @@ const ModalWrapper = styled.div`
     height: 100vh;
   }
 
-  .modal-overlay-hidden {
+  .modal-functionality-hidden {
     display: hiden;
   }
 
@@ -76,19 +86,20 @@ const ModalWrapper = styled.div`
     height: 3.6rem;
     width: 3.6rem;
     background-color: transparent;
-    position: fixed;
-    top: 5rem;
-    right: 5rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
     margin: 0 auto;
     cursor: pointer;
     z-index: 100;
+    box-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.5);
 
     @media (max-width: 56.25em) {
-      top: 9.6rem;
-      right: 2.2rem;
+      top: 1rem;
+      right: 1rem;
     }
 
     @media (hover: hover) {
@@ -98,6 +109,7 @@ const ModalWrapper = styled.div`
           rgb(216, 216, 216),
           rgb(216, 215, 215)
         );
+        box-shadow: 0.1rem 0.1rem 0.6rem rgba(0, 0, 0, 0.5);
       }
     }
   }
@@ -168,26 +180,33 @@ const ModalWrapper = styled.div`
 `
 
 export default class Modal extends Component {
+  handleClose() {
+    const element = document.getElementById("modal")
+    element.scrollTo(0, 0)
+    this.props.closeModal()
+  }
+
   render() {
     const modalDetails = this.props.modalDetails
     const showModal = this.props.showModal
 
     return (
       <ModalWrapper>
-        <div className={showModal ? "popup" : "hide-modal"}>
+        <div className={showModal ? "overlay" : "hide-modal"}>
           <div
             className={
-              showModal ? "modal-overlay-shown" : "modal-overlay-hidden"
+              showModal
+                ? "modal-functionality-shown"
+                : "modal-functionality-hidden"
             }
-            onClick={() => this.props.closeModal()}
+            onClick={() => this.handleClose()}
           ></div>
-          <div className="exit" onClick={() => this.props.closeModal()}>
-            <span className="exit__icon">&nbsp;</span>
-          </div>
-          <div className="popup__content">
-            <h3 className="heading-tertiary" id="modal-top">
-              {modalDetails.name}
-            </h3>
+
+          <div className="overlay__content" id="modal">
+            <div className="exit" onClick={() => this.handleClose()}>
+              <span className="exit__icon">&nbsp;</span>
+            </div>
+            <h3 className="heading-tertiary">{modalDetails.name}</h3>
             <div className="description">
               <b>The Goal:&ensp;</b>
               {modalDetails.description}

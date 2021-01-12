@@ -180,7 +180,6 @@ export default class AProject extends Component {
             </div>
             <div className="btn-position">
               <a
-                href="#modal-top"
                 className="btn--2"
                 onClick={() => this.props.modalOnClick(aProject.details)}
               >
