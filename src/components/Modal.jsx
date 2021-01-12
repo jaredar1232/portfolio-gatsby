@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import Icons from "../components/Icons.jsx"
 
+// .hide-modal and .popup are used for placement of modal content
+// .modal-overlay-shown and .modal-overlay-hidden are used for closing modal functionality
 const ModalWrapper = styled.div`
   .hide-modal {
     display: none;
@@ -41,6 +43,21 @@ const ModalWrapper = styled.div`
     @media (max-width: 56.25em) {
       background-color: rgba(0, 0, 0, 0.9);
     }
+  }
+
+  .modal-overlay-shown {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .modal-overlay-hidden {
+    display: hiden;
   }
 
   .exit {
@@ -146,6 +163,12 @@ export default class Modal extends Component {
     return (
       <ModalWrapper>
         <div className={showModal ? "popup" : "hide-modal"}>
+          <div
+            className={
+              showModal ? "modal-overlay-shown" : "modal-overlay-hidden"
+            }
+            onClick={() => this.props.closeModal()}
+          ></div>
           <div className="exit" onClick={() => this.props.closeModal()}>
             <span className="exit__icon">&nbsp;</span>
           </div>
