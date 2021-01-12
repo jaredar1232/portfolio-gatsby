@@ -34,6 +34,22 @@ const NavbarWrapper = styled.div`
     }
   }
 
+  @keyframes navButtonBackgroundAppearMobile {
+    0% {
+      opacity: 0;
+      border-radius: 100px;
+      height: 0;
+      width: 0;
+    }
+
+    100% {
+      opacity: 1;
+      border-radius: 5rem;
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+
   .navigation {
     &__checkbox {
       display: none;
@@ -58,7 +74,7 @@ const NavbarWrapper = styled.div`
 
       animation: navButtonAppear 1s;
       animation-fill-mode: backwards;
-      animation-delay: 10s;
+      animation-delay: 5.5s;
 
       transition: all 0.4s;
 
@@ -67,6 +83,9 @@ const NavbarWrapper = styled.div`
       }
 
       @media (max-width: 56.25em) {
+        animation: navButtonBackgroundAppearMobile 1s;
+        animation-delay: 2s;
+        animation-fill-mode: backwards;
         height: 5rem; // -2
         width: 5rem; // -2
         top: 3rem;
