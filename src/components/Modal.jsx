@@ -5,6 +5,16 @@ import Icons from "../components/Icons.jsx"
 // .hide-modal and .popup are used for placement of modal content
 // .modal-overlay-shown and .modal-overlay-hidden are used for closing modal functionality
 const ModalWrapper = styled.div`
+  @keyframes modalSlide {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
   .hide-modal {
     display: none;
   }
@@ -30,6 +40,8 @@ const ModalWrapper = styled.div`
       transform: translate(-50%, -50%);
       border-radius: 10px;
       overflow: auto;
+      animation: modalSlide 0.5s;
+
       ::-webkit-scrollbar {
         width: 0px;
       }
