@@ -84,7 +84,7 @@ const NavbarWrapper = styled.div`
 
       @media (max-width: 56.25em) {
         animation: navButtonBackgroundAppearMobile 1s;
-        animation-delay: 2s;
+        animation-delay: 3s;
         animation-fill-mode: backwards;
         height: 5rem; // -2
         width: 5rem; // -2
@@ -106,13 +106,14 @@ const NavbarWrapper = styled.div`
 
       animation: navButtonBackgroundAppear 0s;
       animation-fill-mode: backwards;
-      animation-delay: 11s;
+      animation-delay: 5.5s;
 
       @media (max-width: 56.25em) {
         height: 4rem; // -2
         width: 4rem; // -2
         top: 3.5rem;
         right: 3.5rem;
+        animation-delay: 3s;
       }
     }
 
