@@ -106,14 +106,14 @@ const NavbarWrapper = styled.div`
 
       animation: navButtonBackgroundAppear 0s;
       animation-fill-mode: backwards;
-      animation-delay: 5.5s;
+      animation-delay: 6.5s;
 
       @media (max-width: 56.25em) {
         height: 4rem; // -2
         width: 4rem; // -2
         top: 3.5rem;
         right: 3.5rem;
-        animation-delay: 3s;
+        animation-delay: 4s;
       }
     }
 
