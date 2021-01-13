@@ -14,7 +14,7 @@ const IconsWrapper = styled.div`
   }
 
   .icon-image {
-    height: auto%;
+    height: 100%;
     width: 100%;
   }
 
