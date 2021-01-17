@@ -126,37 +126,49 @@ export default class Contact extends Component {
   }
 
   handleSubmit(event) {
-    alert("Message Submitted!")
     event.preventDefault()
 
-    axios
-      .post(
-        "https://jared-rothenberg-portfolio-ser.herokuapp.com/api",
-        // "http://localhost:1232/api",
-        {
-          name: this.state.name,
-          email: this.state.email,
-          subject: this.state.subject,
-          message: this.state.message,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
+    if (
+      this.state.name === "" ||
+      this.state.email === "" ||
+      this.state.subject === "" ||
+      this.state.message === ""
+    ) {
+      alert("Please fill out the full form.")
+    } else {
+      alert("Message Submitted!")
+      axios
+        .post(
+          "https://jared-rothenberg-portfolio-ser.herokuapp.com/api",
+          // "http://localhost:1232/api",
+          {
+            name: this.state.name,
+            email: this.state.email,
+            subject: this.state.subject,
+            message: this.state.message,
           },
-        }
-      )
-      .then(function (response) {
-        console.log(response)
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        )
+        .then(function (response) {
+          console.log(response)
+        })
+        .catch(function (error) {
+          // console.log(error)
+          console.log(
+            "Disregard cors/post error: your message was submitted through a proxy server :)"
+          )
+        })
+      this.setState({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
       })
-      .catch(function (error) {
-        console.log(error)
-      })
-    this.setState({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    })
+    }
   }
 
   render() {
