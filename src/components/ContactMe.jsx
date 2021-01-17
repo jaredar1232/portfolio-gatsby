@@ -101,6 +101,25 @@ const ContactWrapper = styled.div`
       transform: translateY(0);
     }
   }
+
+  .img-container {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
+
+  .hideform-img {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .hideform-text {
+    text-align: center;
+    font-size: 2rem;
+    padding: 5rem 0;
+  }
 `
 
 export default class Contact extends Component {
@@ -111,9 +130,12 @@ export default class Contact extends Component {
       email: "",
       subject: "",
       message: "",
+      attemptCount: 0,
+      hideForm: false,
     }
     this.handleInputChange = this.handleInputChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.isEmpty = this.isEmpty.bind(this)
   }
   handleInputChange(event) {
     const target = event.target
@@ -125,16 +147,70 @@ export default class Contact extends Component {
     })
   }
 
+  // returns true if empty otherwise updates the first empty field to a new message
+  isEmpty() {
+    // define possible "empty" entries
+    let empty = [
+      "",
+      "Please fill me out",
+      "All of me",
+      "Srsly?? Try that again...",
+      "hide",
+    ]
+
+    // define each field
+    let possibleFieldValues = [
+      this.state.name,
+      this.state.email,
+      this.state.subject,
+      this.state.message,
+    ]
+
+    //loop over fields and check if they're equal to an empty#
+    for (let i = 0; i < possibleFieldValues.length; i++) {
+      let currentFieldValue = possibleFieldValues[i]
+
+      if (
+        currentFieldValue === empty[0] ||
+        currentFieldValue === empty[1] ||
+        currentFieldValue === empty[2] ||
+        currentFieldValue === empty[3]
+      ) {
+        // determine next empty message based on attemptCount
+        let nextFill = empty[this.state.attemptCount + 1]
+        console.log("should log next empty message", nextFill)
+
+        // increment empty count
+        this.setState(prevState => {
+          return { attemptCount: prevState.attemptCount + 1 }
+        })
+
+        let possibleField = ["name", "email", "subject", "message"]
+
+        // set a field to an empty message depending on how many attempts
+        this.setState({
+          [possibleField[i]]: nextFill,
+        })
+
+        if (nextFill === "hide") {
+          this.setState({
+            hideForm: true,
+          })
+        }
+        // there is still an empty field
+        return true
+      }
+    }
+
+    // all fields have been filled out
+    return false
+  }
+
   handleSubmit(event) {
     event.preventDefault()
 
-    if (
-      this.state.name === "" ||
-      this.state.email === "" ||
-      this.state.subject === "" ||
-      this.state.message === ""
-    ) {
-      alert("Please fill out the full form.")
+    if (this.isEmpty()) {
+      // only submits when a false isnt thrown for an empty message
     } else {
       alert("Message Submitted!")
       axios
@@ -174,78 +250,89 @@ export default class Contact extends Component {
   render() {
     return (
       <ContactWrapper>
-        <section className="section-contact">
-          <div className="u-center-text">
-            <h2 className="heading-secondary" id="contact-me">
-              Contact Me
-            </h2>
-          </div>
+        {this.state.hideForm ? (
+          <section className="section-contact">
+            <div className="img-container">
+              <img className="hideform-img" src={`/HideForm.png`}></img>
+            </div>
+            <div className="hideform-text">
+              This isn't the form you're looking for... move along...
+            </div>
+          </section>
+        ) : (
+          <section className="section-contact">
+            <div className="u-center-text">
+              <h2 className="heading-secondary" id="contact-me">
+                Contact Me
+              </h2>
+            </div>
 
-          <div className="form-container">
-            <form onSubmit={this.handleSubmit}>
-              <label>
-                Name:
-                <input
-                  type="text"
-                  name="name"
-                  value={this.state.name}
-                  onChange={this.handleInputChange}
-                  className="form-text"
-                  id="name"
-                  data-sal="slide-right"
-                  data-sal-delay="300"
-                  data-sal-easing="ease"
-                  data-sal-duration="500"
-                />
-              </label>
-              <label>
-                Email:
-                <input
-                  type="text"
-                  name="email"
-                  value={this.state.email}
-                  onChange={this.handleInputChange}
-                  className="form-text"
-                  data-sal="slide-right"
-                  data-sal-delay="300"
-                  data-sal-easing="ease"
-                  data-sal-duration="500"
-                />
-              </label>
-              <label>
-                Subject:
-                <input
-                  type="text"
-                  name="subject"
-                  value={this.state.subject}
-                  onChange={this.handleInputChange}
-                  className="form-text"
-                  data-sal="slide-right"
-                  data-sal-delay="300"
-                  data-sal-easing="ease"
-                  data-sal-duration="500"
-                />
-              </label>
-              <label>
-                Message:
-                <textarea
-                  type="text"
-                  name="message"
-                  value={this.state.message}
-                  onChange={this.handleInputChange}
-                  className="form-text form-textarea"
-                  data-sal="slide-right"
-                  data-sal-delay="300"
-                  data-sal-easing="ease"
-                  data-sal-duration="500"
-                />
-              </label>
-              <div className="center-submit">
-                <input type="submit" value="Submit" className="form-submit" />
-              </div>
-            </form>
-          </div>
-        </section>
+            <div className="form-container">
+              <form onSubmit={this.handleSubmit}>
+                <label>
+                  Name:
+                  <input
+                    type="text"
+                    name="name"
+                    value={this.state.name}
+                    onChange={this.handleInputChange}
+                    className="form-text"
+                    id="name"
+                    data-sal="slide-right"
+                    data-sal-delay="300"
+                    data-sal-easing="ease"
+                    data-sal-duration="500"
+                  />
+                </label>
+                <label>
+                  Email:
+                  <input
+                    type="text"
+                    name="email"
+                    value={this.state.email}
+                    onChange={this.handleInputChange}
+                    className="form-text"
+                    data-sal="slide-right"
+                    data-sal-delay="300"
+                    data-sal-easing="ease"
+                    data-sal-duration="500"
+                  />
+                </label>
+                <label>
+                  Subject:
+                  <input
+                    type="text"
+                    name="subject"
+                    value={this.state.subject}
+                    onChange={this.handleInputChange}
+                    className="form-text"
+                    data-sal="slide-right"
+                    data-sal-delay="300"
+                    data-sal-easing="ease"
+                    data-sal-duration="500"
+                  />
+                </label>
+                <label>
+                  Message:
+                  <textarea
+                    type="text"
+                    name="message"
+                    value={this.state.message}
+                    onChange={this.handleInputChange}
+                    className="form-text form-textarea"
+                    data-sal="slide-right"
+                    data-sal-delay="300"
+                    data-sal-easing="ease"
+                    data-sal-duration="500"
+                  />
+                </label>
+                <div className="center-submit">
+                  <input type="submit" value="Submit" className="form-submit" />
+                </div>
+              </form>
+            </div>
+          </section>
+        )}
       </ContactWrapper>
     )
   }
