@@ -136,7 +136,14 @@ export default class Contact extends Component {
     this.handleInputChange = this.handleInputChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handleFormInputs = this.handleFormInputs.bind(this)
+    this.handleClear = this.handleClear.bind(this)
   }
+
+  // clears a form field when selected
+  handleClear(e) {
+    document.getElementById(`${e.target.id}`).value = ""
+  }
+
   handleInputChange(event) {
     const target = event.target
     const value = target.value
@@ -284,6 +291,7 @@ export default class Contact extends Component {
                     onChange={this.handleInputChange}
                     className="form-text"
                     id="name"
+                    onClick={e => this.handleClear(e)}
                     data-sal="slide-right"
                     data-sal-delay="300"
                     data-sal-easing="ease"
@@ -298,6 +306,8 @@ export default class Contact extends Component {
                     value={this.state.email}
                     onChange={this.handleInputChange}
                     className="form-text"
+                    id="email"
+                    onClick={e => this.handleClear(e)}
                     data-sal="slide-right"
                     data-sal-delay="300"
                     data-sal-easing="ease"
@@ -312,6 +322,8 @@ export default class Contact extends Component {
                     value={this.state.subject}
                     onChange={this.handleInputChange}
                     className="form-text"
+                    id="subject"
+                    onClick={e => this.handleClear(e)}
                     data-sal="slide-right"
                     data-sal-delay="300"
                     data-sal-easing="ease"
@@ -326,6 +338,8 @@ export default class Contact extends Component {
                     value={this.state.message}
                     onChange={this.handleInputChange}
                     className="form-text form-textarea"
+                    id="message"
+                    onClick={e => this.handleClear(e)}
                     data-sal="slide-right"
                     data-sal-delay="300"
                     data-sal-easing="ease"
