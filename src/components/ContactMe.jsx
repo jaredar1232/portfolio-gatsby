@@ -118,7 +118,7 @@ const ContactWrapper = styled.div`
   .hideform-text {
     text-align: center;
     font-size: 2rem;
-    padding: 5rem 0;
+    padding: 5rem 3rem;
   }
 `
 
@@ -135,7 +135,7 @@ export default class Contact extends Component {
     }
     this.handleInputChange = this.handleInputChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
-    this.isEmpty = this.isEmpty.bind(this)
+    this.handleFormInputs = this.handleFormInputs.bind(this)
   }
   handleInputChange(event) {
     const target = event.target
@@ -148,7 +148,7 @@ export default class Contact extends Component {
   }
 
   // returns true if empty otherwise updates the first empty field to a new message
-  isEmpty() {
+  handleFormInputs() {
     // define possible "empty" entries
     let empty = [
       "",
@@ -166,7 +166,7 @@ export default class Contact extends Component {
       this.state.message,
     ]
 
-    //loop over fields and check if they're equal to an empty#
+    // loop over field values and check if they're equal to an empty value / phrase
     for (let i = 0; i < possibleFieldValues.length; i++) {
       let currentFieldValue = possibleFieldValues[i]
 
@@ -176,9 +176,13 @@ export default class Contact extends Component {
         currentFieldValue === empty[2] ||
         currentFieldValue === empty[3]
       ) {
+        // alert the first time a form isn't filled out (incase form isnt in full mobile view)
+        if (this.state.attemptCount === 0) {
+          alert("Please fill out the form")
+        }
+
         // determine next empty message based on attemptCount
         let nextFill = empty[this.state.attemptCount + 1]
-        console.log("should log next empty message", nextFill)
 
         // increment empty count
         this.setState(prevState => {
@@ -206,11 +210,13 @@ export default class Contact extends Component {
     return false
   }
 
+  // checks for blank fields, then for valid email, then submits
   handleSubmit(event) {
     event.preventDefault()
-
-    if (this.isEmpty()) {
+    if (this.handleFormInputs()) {
       // only submits when a false isnt thrown for an empty message
+    } else if (!/^([a-zA-Z0-9]+@[a-zA-Z]+\.com){1}$/.test(this.state.email)) {
+      alert("Please enter a valid email")
     } else {
       alert("Message Submitted!")
       axios
