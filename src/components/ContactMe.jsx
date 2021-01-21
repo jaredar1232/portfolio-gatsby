@@ -301,7 +301,7 @@ export default class Contact extends Component {
                 <label>
                   Email:
                   <input
-                    type="text"
+                    type="email"
                     name="email"
                     value={this.state.email}
                     onChange={this.handleInputChange}
