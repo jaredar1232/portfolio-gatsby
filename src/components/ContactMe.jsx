@@ -347,7 +347,9 @@ export default class Contact extends Component {
                   />
                 </label>
                 <div className="center-submit">
-                  <input type="submit" value="Submit" className="form-submit" />
+                  <button type="submit" value="Submit" className="form-submit">
+                    Submit
+                  </button>
                 </div>
               </form>
             </div>
