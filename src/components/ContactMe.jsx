@@ -45,6 +45,10 @@ const ContactWrapper = styled.div`
     max-width: 55rem;
   }
 
+  .asterisk {
+    color: red;
+  }
+
   .form-text {
     width: 100%;
     padding: 12px 20px;
@@ -283,7 +287,7 @@ export default class Contact extends Component {
             <div className="form-container">
               <form onSubmit={this.handleSubmit}>
                 <label>
-                  Name:
+                  Name<span className="asterisk">*</span>
                   <input
                     type="text"
                     name="name"
@@ -299,7 +303,7 @@ export default class Contact extends Component {
                   />
                 </label>
                 <label>
-                  Email:
+                  Email<span className="asterisk">*</span>
                   <input
                     type="email"
                     name="email"
@@ -315,7 +319,7 @@ export default class Contact extends Component {
                   />
                 </label>
                 <label>
-                  Subject:
+                  Subject<span className="asterisk">*</span>
                   <input
                     type="text"
                     name="subject"
@@ -331,7 +335,7 @@ export default class Contact extends Component {
                   />
                 </label>
                 <label>
-                  Message:
+                  Message<span className="asterisk">*</span>
                   <textarea
                     type="text"
                     name="message"
