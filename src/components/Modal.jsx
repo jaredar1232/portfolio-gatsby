@@ -79,7 +79,7 @@ const ModalWrapper = styled.div`
   }
 
   .modal-functionality-hidden {
-    display: hiden;
+    display: hidden;
   }
 
   .exit {
