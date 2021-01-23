@@ -145,8 +145,6 @@ export default class AProject extends Component {
           <h3 className="heading-tertiary">{aProject.name}</h3>
           <div className="image-container">
             <video
-              width="100%"
-              height="auto"
               playsInline
               muted
               loop
