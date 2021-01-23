@@ -106,7 +106,7 @@ const TopFoldWrapper = styled.div`
     100% {
       opacity: 1;
 
-      font-size: 1.6 rem;
+      font-size: 1.6rem;
       border-radius: 0;
       color: lightgrey;
       background-color: rgba(0, 0, 0, 0.3);
