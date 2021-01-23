@@ -337,7 +337,6 @@ export default class Contact extends Component {
                 <label>
                   Message<span className="asterisk">*</span>
                   <textarea
-                    type="text"
                     name="message"
                     value={this.state.message}
                     onChange={this.handleInputChange}
