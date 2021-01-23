@@ -84,7 +84,7 @@ export default class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <section className="section-footer">
+        <footer className="section-footer">
           <div
             className="icon-container"
             data-sal="zoom-in"
@@ -136,7 +136,7 @@ export default class Footer extends Component {
             Copyright &copy; 2020, &nbsp; Jared Rothenberg. &nbsp; All Rights
             Reserved
           </div>
-        </section>
+        </footer>
       </FooterWrapper>
     )
   }
