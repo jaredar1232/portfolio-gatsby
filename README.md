@@ -24,3 +24,5 @@ From within the root directory:
 1. run "npm install"
 
 2. run "gatsby develop"
+
+3. must be running node 14 as of last time running. otherwise update dependencies 
