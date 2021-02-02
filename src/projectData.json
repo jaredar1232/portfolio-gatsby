@@ -9,8 +9,9 @@
       "description": "build a full stack contact storage application while learning Typescript and React Hooks.",
       "keyPoints": [
         "Programmed in Typescript to prevent runtime errors",
-        "Class objects written using React Hooks to improve code legibility",
-        "Designed a custom API with seperated query routes in order to allow for easier scaling in the future"
+        "Managed state using React Hooks to improve code legibility",
+        "Wrote a custom API to allow for easier scaling in the future",
+        "Architected the backend in pure Node/PostgreSQL to avoid bloat from ORMs"
       ],
       "icons": [
         "Typescript",
