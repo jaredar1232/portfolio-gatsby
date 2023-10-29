@@ -1,7 +1,7 @@
 # Personal Portfolio
 
 
->  responsive personal portfolio
+>  Responsive personal portfolio (DEPRECATED)
 
 
 ## Table of Contents
